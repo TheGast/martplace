@@ -278,7 +278,8 @@
     flex-direction: column;
     align-items: center;
     &:hover{                         
-        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);       
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        transition: all .5s;       
    }
    a{
        display: block;
@@ -308,3 +309,136 @@
 }
 
 
+//end advantages-------------------------------------------------------------
+
+//start slider-product-------------------------------------------------------------
+.slider-product{
+    background-color: #eff1f5;
+    padding: 119px 0px;
+    &__title{        
+        background-color: #fff; 
+        border-radius: 4px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        padding: 32px 30px;        
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        margin-bottom: 50px; 
+        
+
+        &-title{
+           font-size: 30px;
+           max-width: 890px; 
+        }
+        &-btn{
+            width: 110px;
+            flex: none;
+            height: 45px;
+            background-color: #7347c1;
+            border-radius: 25px;
+            margin-left: 10px;
+
+        }
+
+    }
+}
+
+
+.slider-items__inner{   
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    display: flex;
+    
+ 
+}
+.item-inner__img{
+    max-width: 556px;
+    width: 100%;  
+    
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.inner-content{
+    background-color: #fff;
+    padding: 47px 47px 0 47px;
+    &__title{
+        font-size: 24px;
+        font-weight: 500;   
+        a{
+            color: #000;
+        }     
+    }
+
+}
+.inner-content__autor{
+  margin: 14px 0 27px ;
+  display: flex;
+  align-items: center;
+
+}
+.autor__avatar{
+    height: 30px;
+    width: 30px;
+    
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;        
+    }
+}
+.autor__name{
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 15px;
+    color: #000;
+}
+.autor__category{
+    padding-left: 25px;
+    color: #7347c1;
+    position: relative;
+    &::before{
+        content: '';
+        background-image: url(../images/icons/icon-1.svg);
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.inner-content__text{
+   font-size: 16px;
+   line-height: 30px;
+   color: #555555;
+
+}
+.tags__items{
+    margin: 34px 0px 44px;
+    li + li{
+        margin-left: 8px;
+    }
+    a{
+        padding: 7px 14px;
+        background-color: #f1f3f6;
+        border-radius: 20px;
+        color: #868c96;
+        font-size: 15px;
+
+    }
+}
+.inner-content__stats{
+    min-height: 79px;
+    border-top: 1px solid #ececec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//end slider-product-------------------------------------------------------------
