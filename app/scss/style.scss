@@ -530,7 +530,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; 
-    margin-bottom: 56px;   
+    margin-bottom: 30px;   
 }
 .new-product__item{
     margin-bottom: 30px;    
@@ -578,6 +578,43 @@ button.mixitup-control-active{
 
 
 //end new-product-------------------------------------------------------------
+// start followers
+.followers{
+    background-color: $gray;
+}
+.followers__title-btn{
+    background-color: $blue;
+}
+.followers__slider-items{
+    display: flex;
+    justify-content: space-between;
+}
+.slick-arrow {
+    border: none;
+    padding: 0 0;
+    position: absolute;
+    top: -112px;
+    background-color: transparent;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}
+.slick-next {
+    right: 53px;
+}
+.slick-prev {
+    right: 104px;    
+}
+
+
+
+
+// end followers
+
+
+
+
 
 
 .followers__img{
