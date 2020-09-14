@@ -61,7 +61,7 @@ body {
 }
 .section__title {
     background-color: #fff;   
-    padding: 32px 30px;
+    padding: 38px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,9 +91,10 @@ body {
        background-size: cover;
        background-repeat: no-repeat; 
        min-height: 230px;
+       border-radius: 4px 4px 0px 0px;       
     }
     &-content{
-        padding: 30px;
+        padding: 28px;
     }
     &-stats{
         display: flex;
@@ -103,6 +104,43 @@ body {
         padding-left: 30px;
         padding-right: 30px;
         border-top: 1px solid #ececec;
+        font-size: 15px;
+        color: #0674ec;
+        .stats-price{
+            padding: 6px 17px;
+            background-color: #e6f1fd;            
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        .stats-like{
+            padding-left: 20px;
+            position: relative;
+            color: #6f7d8d;
+            margin: 0 13px;
+            &::before{
+                content: '\e813';
+                position: absolute;
+                left: 0;                
+                font-family: 'Linearicons-Free';
+                color: #7f4ec2;
+            }
+        }
+        .stats-cell{
+            padding-left: 25px;
+            position: relative;
+            &::before{
+                content: '\e82e';
+                position: absolute;
+                left: 0;                
+                font-family: 'Linearicons-Free';
+                
+            }
+        }
+        .stats__inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
     .content__title{
         font-size: 20px;
@@ -111,7 +149,7 @@ body {
     .content__autor{
         display: flex;
         align-items: center;
-        padding: 20px 0px 30px;
+        padding: 15px 0px 24px;
         .autor-avatar{
             width: 30px;
             height: 30px;
@@ -129,16 +167,14 @@ body {
             color: #7347c1;
             font-size: 15px;
             position: relative;
-            &::before{
-                position: absolute;
-                content: '';
-                background-image: url(../images/icons/wordpress.svg);
+            img{
+                position: absolute; 
                 left: 0;
                 top: 50%;
                 transform: translateY(-50%);
                 width: 15px;
                 height: 15px;
-            }
+            }       
         }
     }
     .content__text{

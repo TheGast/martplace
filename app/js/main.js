@@ -1,6 +1,6 @@
 $(function() {
 
-    $(".content__stats-rat").rateYo({
+    $(".star-rate").rateYo({
         rating: 4.5,
         starWidth: '15px',
         readOnly: true,
@@ -23,6 +23,6 @@ $(function() {
 
     });
 
-    var mixer = mixitup('.new-product__item-inner')
+    var mixer = mixitup('.new-product__items')
 
 });

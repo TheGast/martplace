@@ -491,6 +491,90 @@
 
 //end featured-------------------------------------------------------------
 //start new-product-------------------------------------------------------------
+.new-product{
+    background-color: $litegray;
+}
+.new-product__title-drop{
+    padding-right: 28px;
+    color: #747b86;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        background-image: url(../images/icons/filter-icon.svg);
+        right: 0;
+        width: 5px;
+        height: 20px;
+        
+        }        
+    }
+.new-product__filter{
+   border-radius: 4px;
+   box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
+   padding: 30px;
+   font-size: 15px;
+   color: #747b86;
+   background-color: #fff;
+   margin-bottom: 50px;
+   button{
+      padding: 8px 20px; 
+      background-color: #f1f3f6;
+      border: none;
+      border-radius: 30px;
+      &+button{
+          margin-left: 10px;
+      }            
+   }      
+}
+.new-product__items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin-bottom: 56px;   
+}
+.new-product__item{
+    margin-bottom: 30px;    
+    &:hover .new-product__item-img--hover{
+        opacity: 0.9;        
+    }
+}
+button.mixitup-control-active{
+    background-color: $blue;
+    color: #fff;
+}
+.new-product__all-btn{
+    text-align: center;
+    button{
+        padding: 18px 30px;        
+        border-radius: 30px;
+        border: none;
+    }
+}
+.new-product__item-img--hover{   
+    width: 100%;
+    min-height: 230px;
+    border-radius: 4px 4px 0 0;
+    opacity: 0;    
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        border: 1px solid #fff;
+        padding: 17px 28px;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        transition: all .5s;
+        &+a{
+            margin-left: 10px;        }
+        &:hover{
+            background-color: #fff;
+            color: $blue;
+        }
+    }
+}
 
 
 //end new-product-------------------------------------------------------------

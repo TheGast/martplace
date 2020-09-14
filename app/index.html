@@ -341,12 +341,10 @@
 
             <section class="new-product section-box">
                 <div class="container">
-
                     <div class="new-product__title section__title">
                         <div class="new-product_title-text section__title-text  ">Newest Release Products </div>
-                        <div class="new-product__title-filter">Filter by:</div>
+                        <div class="new-product__title-drop">Filter by:</div>
                     </div>
-
                     <div class="new-product__filter">
                         <button type="button" data-filter=".category-plugins">Plugins</button>
                         <button type="button" data-filter=".category-wordpress">WordPress</button>
@@ -357,54 +355,214 @@
                         <button type="button" data-filter=".category-landing">Landing Page</button>
                         <button type="button" data-filter=".category-software">Software</button>
                     </div>
-
-
-
                     <div class="new-product__items">
-
-                        <div class="new-product__item product__item">
-                            <div class="new-product__item-img product__item-img" style="background-image: url(images/sell-bg.jpg);"></div>
+                        <div class="new-product__item product__item mix category-plugins category-landing"
+                            data-order="1">
+                            <div class="new-product__item-img product__item-img"
+                                style="background-image: url(images/sell-bg.jpg);">
+                                <div class="new-product__item-img--hover" style="background-image: linear-gradient( to left, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%) ;">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                            </div>
                             <div class="new-product__item-content product__item-content">
                                 <div class="content__title">
                                     E-commerce Shopping Cart
                                 </div>
                                 <div class="content__autor">
-                                    <div class="autor-avatar" style="background-image: url(images/sell-bg.jpg);"></div>                  
+                                    <div class="autor-avatar" style="background-image: url(images/sell-bg.jpg);"></div>
                                     <div class="auror-name">Theme-Valley</div>
-                                    <div class="autor-category">Plugin</div>
+                                    <div class="autor-category">Plugin
+                                        <img src="images/icons/wordpress.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="content__text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque 
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                                     the mattis, leo quam aliquet congue.
                                 </div>
                             </div>
                             <div class="new-product__item-stats product__item-stats">
-                                <div class="stats-price">$20</div>
-                                <div class="stats-like">90</div>
-                                <div class="star-rate"></div>
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
+                        <div class="new-product__item product__item mix category-interface" data-order="2">
+                            <div class="new-product__item-img product__item-img"
+                                style="background-image: url(images/sell-bg.jpg);">
+                                <div class="new-product__item-img--hover" style="background-image: linear-gradient( to left, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%) ;">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="new-product__item-content product__item-content">
+                                <div class="content__title">
+                                    E-commerce Shopping Cart
+                                </div>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/sell-bg.jpg);"></div>
+                                    <div class="auror-name">Theme-Valley</div>
+                                    <div class="autor-category">Plugin
+                                        <img src="images/icons/psd.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="new-product__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
+                        <div class="new-product__item product__item mix category-wordpress category-software"
+                            data-order="3">
+                            <div class="new-product__item-img product__item-img"
+                                style="background-image: url(images/sell-bg.jpg);">
+                            
+                                <div class="new-product__item-img--hover" style="background-image: linear-gradient( to left, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%) ;">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="new-product__item-content product__item-content">
+                                <div class="content__title">
+                                    E-commerce Shopping Cart
+                                </div>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/sell-bg.jpg);"></div>
+                                    <div class="auror-name">Theme-Valley</div>
+                                    <div class="autor-category">Plugin
+                                        <img src="images/icons/html.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="new-product__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
+                        <div class="new-product__item product__item mix category-site" data-order="4">
+                            <div class="new-product__item-img product__item-img"
+                                style="background-image: url(images/sell-bg.jpg);">
+                                <div class="new-product__item-img--hover" style="background-image: linear-gradient( to left, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%) ;">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="new-product__item-content product__item-content">
+                                <div class="content__title">
+                                    E-commerce Shopping Cart
+                                </div>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/sell-bg.jpg);"></div>
+                                    <div class="auror-name">Theme-Valley</div>
+                                    <div class="autor-category">Plugin
+                                        <img src="images/icons/html.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="new-product__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
+                        <div class="new-product__item product__item mix category-joomla category-interface"
+                            data-order="5">
+                            <div class="new-product__item-img product__item-img"
+                                style="background-image: url(images/sell-bg.jpg);">
+                                <div class="new-product__item-img--hover" style="background-image: linear-gradient( to left, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%) ;">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="new-product__item-content product__item-content">
+                                <div class="content__title">
+                                    E-commerce Shopping Cart
+                                </div>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/sell-bg.jpg);"></div>
+                                    <div class="auror-name">Theme-Valley</div>
+                                    <div class="autor-category">Plugin
+                                        <img src="images/icons/html.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="new-product__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
                                 <div class="stats-cell">246</div>
                             </div>
                         </div>
 
-
-
-
-
-
-
-
-
+                        <div class="new-product__item product__item mix category-psd" data-order="6">
+                            <div class="new-product__item-img product__item-img"
+                                style="background-image: url(images/sell-bg.jpg);">
+                                <div class="new-product__item-img--hover" style="background-image: linear-gradient( to left, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%) ;">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="new-product__item-content product__item-content">
+                                <div class="content__title">
+                                    E-commerce Shopping Cart
+                                </div>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/sell-bg.jpg);"></div>
+                                    <div class="auror-name">Theme-Valley</div>
+                                    <div class="autor-category">Plugin
+                                        <img src="images/icons/html.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="new-product__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
                     </div>
-
                     <div class="new-product__all-btn">
-                        <a href="#">All New Products</a>
+                        <button type="button" data-filter="all">All New Products</button>
                     </div>
-
-
-
-
-
-
                 </div>
             </section>
             <!-- 
