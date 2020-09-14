@@ -493,6 +493,9 @@
 //start new-product-------------------------------------------------------------
 .new-product{
     background-color: $litegray;
+    &__title{
+        margin-bottom: 30px;
+    }
 }
 .new-product__title-drop{
     padding-right: 28px;
@@ -581,6 +584,10 @@ button.mixitup-control-active{
 // start followers
 .followers{
     background-color: $gray;
+    &__title{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 .followers__title-btn{
     background-color: $blue;
@@ -606,27 +613,17 @@ button.mixitup-control-active{
 .slick-prev {
     right: 104px;    
 }
-
-
-
-
+.slick-slide {   
+    min-height: 534px;
+}
+    
+.slick-active{
+    max-width: 360px !important;
+    &+.slick-active{
+        margin-left: 30px;
+    }
+}
 // end followers
-
-
-
-
-
-
-.followers__img{
-    min-height: 230px;
-    height: 100%;
-}
-.slider-followers__title-btn{
-    background-color: $blue;
-}
-
-
-
 // start statistic
 .statistic{
     background-color: #212225;
@@ -674,12 +671,11 @@ button.mixitup-control-active{
         text-align: center; 
     }
 }
-.reason__title,
-.feedback__title,
-.news__title{
+.second__title{
     font-size: 36px;
     max-width: 710px;
     margin: 0 auto;
+    text-align: center;
     
     span{
         color: $blue;
@@ -703,6 +699,16 @@ button.mixitup-control-active{
   border-radius: 4px;
   padding: 55px 30px;
   margin-bottom: 30px;
+  position: relative;
+  &-number{
+      position: absolute;
+      font-size: 48px;
+      font-weight: 300;
+      color: #5c87f8;
+      opacity: 0.2;
+      top: 15px;
+      left: 20px;
+  }
   &-img{
       img{
           width: 60px;
@@ -791,24 +797,32 @@ button.mixitup-control-active{
             align-items: center; 
             padding-right: 130px; 
             margin-bottom: 21px;  
-            position: relative;
-    &::after{
-        position: absolute;
-        content: '';
-        background-image: url(../images/icons/bubble.svg);
-        width: 60px;
-        height: 60px;
-        top: 3px;
-        right: 10px;
-        background-size: cover;
+            position: relative;    
+            &::after{
+                position: absolute;
+                content: '';
+                background-image: url(../images/icons/bubble.svg);
+                width: 60px;
+                height: 60px;
+                top: 3px;
+                right: 10px;
+                background-size: cover;
+        
+            }         
+        }
+        .autor__avatar{
+            width: 80px;
+            height: 80px;
+            img{
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+            }
+        }    
+             
+    } 
 
-    }      
-            &>a{                
-                width: 80px;
-                height: 80px;
-            }       
-        } 
-}
 .autor__data{
     margin-left: 15px;   
      
@@ -828,6 +842,76 @@ button.mixitup-control-active{
     border-radius: 30px;
 }
 // end feedback
+// start news
+
+.news{
+    background-color: $gray;
+}
+.news__inner-items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.news__item-content .content__title{
+    font-size: 22px;
+    font-weight: 500;
+}
+.news__item-content .content__text{
+    margin-top: 22px;
+}
+.news__item-stats{
+    padding: 10px 30px;
+
+    
+}
+.news__item-stats .stats-data{
+    
+        max-width: 50%;
+        width: 100%;
+        border-right: 1px solid #ececec;
+        padding: 11px 0px;
+        padding-left: 23px;
+        font-size: 15px;
+        color: #999999;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '\e864';
+            font-family: 'Linearicons-Free';
+            font-size: 15px;
+            color: $blue;
+            left: 0;
+        }
+    
+}
+.stats-comment,
+.stats-view{
+   font-size: 15px; 
+   color: #7e7e7e;
+   position: relative;
+   padding-left: 23px;
+   &::before{
+       position: absolute;    
+       font-family: 'Linearicons-Free';      
+       left: 0;
+   }
+}
+.stats-view{
+    margin-left: 30px;
+    &::before{
+        content:'\e81b';         
+    }
+}
+.stats-comment{    
+    &::before{
+        content:'\e83f';         
+    }
+}
+
+
+
+// end news
 // start advantages-bottom
 
 .advantages-bottom__inner{
