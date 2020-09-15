@@ -182,5 +182,24 @@ body {
     }
 
 }
+.breadcrumbs{
+    font-style: 15px;
+    li+li{
+        margin-left: 23px;
+        position: relative;
+        &::before{
+            content:'/';
+            color: #fff;
+            position: absolute;
+            left: -17px;
+        }
+    }
+    a{      
+      color: #fff; 
+    }
+    span{
+        color: #bfcad7;
+    }
+}
 
 
