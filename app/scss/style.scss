@@ -1055,9 +1055,6 @@ button.mixitup-control-active{
 
 // end footer
 // start sm-search
-
-  
-// end sm-search
 .sm-search{
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
 }
@@ -1104,7 +1101,7 @@ button.mixitup-control-active{
     }     
 }
 .sm-search__bottom{
-    background-color: #fff; 
+    background-color: #fff;        
     &-inner{
         height: 100px;
         display: flex;
@@ -1188,5 +1185,94 @@ button.mixitup-control-active{
         }        
     }
 }
+// end sm-search
+//start category-page
+.category-page{
+    background-color: $gray;   
+    &__inner{
+        padding-top: 80px;
+        padding-bottom: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.category-page__aside{
+    max-width: 263px;
+    width: 100%;
+    margin-right: 30px;
+}
+.aside__item{
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    margin-bottom: 29px;
+    padding: 30px 30px 35px 30px;
+    .aside__title{
+        color: #010101;
+        font-size: 20px;
+        padding-bottom: 25px;        
+        border-bottom: 1px solid #e7ebee;
+        display: flex;
+        justify-content: space-between;
+        button{
+            font-size: 12px;
+            color: #555555;
+            background-color: transparent;
+            border: none;
+        }
+    }
+    .aside__list{
+        margin-top: 30px;
+        li{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            color: #555555;
+            position: relative;            
+            &+li{
+                margin-top: 20px;
+            }
+            a{
+                font-size: 15px;
+                color: #555555;
+                cursor: pointer;
+            }  
+            span{
+                padding-left: 10px;
+            }           
+        }
+    }
+}
+.aside__categories{
+    li{
+        a{
+             &::before{
+                position: absolute;
+                content: '\e876';
+                font-size: 10px;
+                left: 0;
+                color: #747b86;
+                font-family: 'Linearicons-Free';
+                top: 50%;
+                transform: translateY(-50%);
+             }
+            &.active{
+             color: $blue;
+            } 
+        }
+    }
+}
+    
 
   
+
+
+
+
+.category-page__content{
+    img{
+        object-fit: cover;
+        width: 100%;
+    }    
+}
+//end category-page
