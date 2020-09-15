@@ -10,9 +10,11 @@ $(function() {
 
     });
 
-    $(".featured__slider-items").slick({
+    $(".featured__items").slick({
         prevArrow: '<button type="button" class="slick-prev slick-arrow"><img src="images/icons/slick-prev.svg"></button>',
-        nextArrow: '<button type="button" class="slick-next slick-arrow"><img src="images/icons/slick-next.svg"></button>'
+        nextArrow: '<button type="button" class="slick-next slick-arrow"><img src="images/icons/slick-next.svg"></button>',
+        slidesToShow: 1,
+        slidesToScroll: 1,
     });
 
     $(".followers__slider-items").slick({
