@@ -19,8 +19,87 @@ $(function() {
         nextArrow: '<button type="button" class="slick-next slick-arrow"><img src="images/icons/slick-next.svg"></button>',
         slidesToShow: 3,
         slidesToScroll: 3,
-
     });
+
+    // $(".js-range-slider").ionRangeSlider({
+    //     type: "double",
+    //     min: 0,
+    //     max: 400,
+    //     from: 30,
+    //     to: 300,  
+    //     prefix: "$",      
+    // });
+
+
+    // --------------------------------------------------------------------------
+
+    var $range = $(".js-range-slider");
+    var $inputFrom = $(".range-input__from");
+    var $inputTo = $(".range-input__to");
+    var instance;
+    var min = 0;
+    var max = 400;
+    var from = 30;
+    var to = 300;
+    
+    
+    $range.ionRangeSlider({        
+        type: "double",
+        min: min,
+        max: max,
+        from: 30,
+        to: 300,
+        prefix: "$",
+        onStart: updateInputs,
+        onChange: updateInputs,
+        onFinish: updateInputs
+    });
+    instance = $range.data("ionRangeSlider");
+    
+    function updateInputs (data) {
+        from = "$" + data.from;
+        to = "$" + data.to;
+    
+        $inputFrom.prop("value", from);
+        $inputTo.prop("value", to);
+    }
+    
+    $inputFrom.on("change", function () {
+        var val = $(this).prop("value");
+        
+        // validate
+        if (val < min) {
+            val = min;
+        } else if (val > to) {
+            val = to;
+        }
+    
+        instance.update({
+            from: val
+        });
+    
+        $(this).prop("value", val);
+    
+    });
+    
+    $inputTo.on("change", function () {
+        var val = $(this).prop("value");
+    
+        // validate
+        if (val < from) {
+            val = from;
+        } else if (val > max) {
+            val = max;
+        }
+    
+        instance.update({
+            to: val
+        });
+    
+        $(this).prop("value", val);
+    });
+
+    // --------------------------------------------------------------------------
 
     $('.style-list').on('click', function(){
         $('.style-list').addClass('active');

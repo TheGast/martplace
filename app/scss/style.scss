@@ -1262,17 +1262,170 @@ button.mixitup-control-active{
         }
     }
 }
-    
-
-  
-
-
-
-
-.category-page__content{
-    img{
-        object-fit: cover;
-        width: 100%;
+.aside__filter{
+    li{
+        a{
+             &::before{
+                position: absolute;
+                content: '';
+                width: 10px;
+                height: 10px;
+                background-color: #fff;
+                border: 1px solid #7b818c;
+                border-radius: 50%;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                }
+            &.active{
+                color: $blue;
+            }
+        }  
     }    
+}    
+.aside__range{
+    text-align: center;
+    .irs--flat {
+        margin-top: 8px;
+    }
+    .irs--flat .irs-line {        
+        height: 6px;
+        background-color: #efedf3;        
+    }
+    .irs--flat .irs-bar {
+        height: 6px;
+        background-color: #7347c1;
+    }
+    .irs--flat .irs-handle {
+        top: 19px;
+        width: 18px;
+        height: 18px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 4px solid $blue;
+    }
+    .irs--flat .irs-max, .irs--flat .irs-min {
+        display: none;
+    }
+    .irs--flat .irs-handle>i:first-child {        
+        background-color: transparent;
+    }   
+    .irs-from, .irs-single, .irs-to {
+        display: none;
+    }
+    .range-input{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        input{
+            max-width: 80px;
+            height: 32px;
+            text-align: center;
+            border: none;
+            background-color: #f1ecf9;
+            border-radius: 30px;
+            font-size: 15px;
+            color: #7347c1;
+        }        
+    }
+    a{
+       padding: 15px 30px;
+       color: #fff;
+       background-color: $blue; 
+       font-weight: 500;
+       font-size: 15px;
+       border-radius: 30px;
+    }
 }
+.category-page__content{
+    width: 100%;    
+}  
+.category-page__content-inner{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+
+.category-page__item{
+    max-width: 263px; 
+    margin-bottom: 30px;  
+    &-img{
+        min-height: 160px;
+    }
+    &-content{
+        padding: 18px 18px 15px 18px;
+    }
+    .content__title{
+        font-size: 18px;
+    }
+    .content__autor{
+        padding-bottom: 18px;
+    }
+    .stats__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    .stats-cell{
+        padding-left: 25px;
+        position: relative;
+        font-size: 15px;
+        color: $blue;
+        &::before{
+            content: '\e82e';
+            position: absolute;
+            left: 0;                
+            font-family: 'Linearicons-Free';
+        }            
+    }
+    .category-page__item-stats{
+        padding: 16px 18px;
+    }
+    .stats-price{
+        margin-right: auto;
+    }
+    .autor-category{
+        margin-left: 4px;
+        color: #7347c1;
+    }
+}
+.pagination{
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    &__list{
+        li{
+            &+li{
+                margin-left: 5px;
+            }
+            &:first-child{
+                margin-right: 15px;
+            } 
+            &:last-child{
+                margin-left: 15px;
+            }
+            a{
+                padding: 13px 22px;
+                background-color: #fff;
+                border-radius: 20px ;
+                font-weight: 500;
+                color: #747b86;
+                transition: all .5s;
+                &.active{
+                    background-color: $blue;
+                    color: #fff;
+                }
+            } 
+            &.pagination-btn:hover{                
+                a{
+                    background-color: #7347c1;
+                    color: #fff;
+                }
+            } 
+        }        
+    }
+}
+
+
+
 //end category-page
