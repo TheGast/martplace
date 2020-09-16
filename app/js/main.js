@@ -20,19 +20,8 @@ $(function() {
         slidesToShow: 3,
         slidesToScroll: 3,
     });
-
-    // $(".js-range-slider").ionRangeSlider({
-    //     type: "double",
-    //     min: 0,
-    //     max: 400,
-    //     from: 30,
-    //     to: 300,  
-    //     prefix: "$",      
-    // });
-
-
-    // --------------------------------------------------------------------------
-
+ 
+//-----------------------------------------------------------------------------------
     var $range = $(".js-range-slider");
     var $inputFrom = $(".range-input__from");
     var $inputTo = $(".range-input__to");
@@ -104,11 +93,14 @@ $(function() {
     $('.style-list').on('click', function(){
         $('.style-list').addClass('active');
         $('.style-grid').removeClass('active');
+        $('.category-page__content-inner').addClass('list');
+        
     });
-
+    
     $('.style-grid').on('click', function(){
         $('.style-grid').addClass('active');
         $('.style-list').removeClass('active');
+        $('.category-page__content-inner').removeClass('list');
     });
 
     var mixer = mixitup('.new-product__items')
