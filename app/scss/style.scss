@@ -36,8 +36,7 @@
     border-radius: 20px;
 }
 
-.header__user {
-    margin-left: 218px;
+.header__user {    
     display: flex;
     &-avatar {
         width: 50px;
@@ -121,8 +120,224 @@
         }
     }
 }
+.header__notifications{
+    display: flex;
+    align-items: center;
+    margin: 0px 48px;
+    &>div+div{
+        margin-left: 30px;
+    }
+    &-alarm,
+    &-envelope,
+    &-cart{
+        width: 20px;
+        height: 20px;
+        position: relative;
+    }
+}
 
-// end header---------------------------------------------
+.notifications__menu-inner{    
+    overflow: hidden;
+    transition: all .1s;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    top: 18px;
+    left: -27px;  
+}
+
+.header__notifications-alarm{
+    &:hover{        
+        .notifications__menu-inner{
+            display: block;
+            padding-top: 42px;            
+            overflow: auto;            
+        } 
+        .notification__menu{            
+            overflow: visible;
+            height:100%;
+            padding: 23px;            
+            opacity: 1;     
+        }
+    }
+}
+
+.header-icon{
+    position: absolute;
+    &::before{
+        font-size: 20px;
+        color: #7e8fa1;
+        position: absolute;
+    }
+    span{
+        position: absolute;
+        content:'';        
+        color: #fff;
+        padding: 6px 9px;
+        padding-top: 5px;        
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 30px;
+        text-align: center;        
+        top: -16px;
+    }
+    &.lnr-alarm{
+        span{
+         background-color: #ff6a6c;
+         left: 10px;   
+        }        
+    }
+    &.lnr-envelope{
+        span{
+         background-color: #62d03b; 
+         left: 14px;  
+        }        
+    }
+    &.lnr-cart{
+        span{
+         background-color: $blue;  
+         left: 16px; 
+        }        
+    }
+}
+.notification__menu{
+
+    
+
+
+    transition: all .3s;
+    
+    background-color: #fff;
+    position: relative;
+    width: 370px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    padding: 23px;
+    padding-bottom: 0;  
+    
+    border-radius: 0 0 4px 4px;  
+   
+
+    overflow: hidden;
+    height: 0;
+    padding: 0 23px;
+    border-top: 2px solid $blue;
+    opacity: 0;
+
+
+
+    &::before{
+        position: absolute;
+        content: '';
+        top: -20px;
+        left: 30px;
+        width: 16px;
+        height: 18px;        
+        border: 8px solid transparent;
+        border-bottom: 8px solid $blue ;
+    }    
+}
+.notification__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    &-text{
+        font-size: 18px;
+    }
+    &-link{
+        font-size: 15px;
+        color: $blue;
+    }
+}
+.notification__item{
+    padding: 20px 0px;
+    border-top: 1px solid #e8ebf0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-right: 50px;
+    &-avatar{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &-content{
+        margin-left: 20px;        
+        font-size: 15px;
+        color: #747a86;
+        line-height: 22px;
+    }
+    &-icon{
+        position: absolute;
+        right: 0;
+        &::before{            
+            font-size: 15px;
+            
+            padding: 9px;
+            
+            border-radius: 50%;
+
+        }
+    }
+}
+.notification__item-icon{
+    &.lnr-heart{
+        &::before{
+         background-color: #e6f1fd;
+         color: $blue;   
+        }        
+    }
+}
+.notification__item-icon{
+    &.lnr-bubble{
+        &::before{
+         background-color: #f1ecf9;
+         color: #7347c1;   
+        }        
+    }
+}
+.notification__item-icon{
+    &.lnr-cart{
+        &::before{
+         background-color: #fff0f0;
+         color: #ff6a6c;   
+        }        
+    }
+}
+.notification__item-icon{
+    &.lnr-star{
+        &::before{
+         background-color: #effaeb;
+         color: #62d03a;   
+        }        
+    }
+}
+.item-content{   
+    &__user{
+        span{
+            font-size: 16px;
+            font-weight: 500;
+            color: #333333;
+        }
+    }
+    &__product{
+        color: $blue;
+        span{
+            color: #747a86;      
+        }
+    }
+    &__date{
+        font-size: 14px;
+    }
+}
+  
+
+// end header----------------
+// -----------------------------
 //start search
 .search {
     background-repeat: no-repeat;
