@@ -38,6 +38,7 @@
 
 .header__user {    
     display: flex;
+    position: relative;
     &-avatar {
         width: 50px;
         height: 50px;
@@ -538,6 +539,114 @@
     background-color: $blue;
     border-radius: 0 0 4px 0;
 }
+
+
+.header__user{
+    &:hover{
+        .drop-down__menu-inner{
+            height: 100%;
+            opacity: 1;
+            padding: 19px;
+            overflow: visible;
+            
+            
+            
+        } 
+        .user__menu-inner{
+            border-width: 1px;
+        }
+        .user__menu{
+            padding-top: 29px;
+            top: 45px;
+            overflow: visible;
+            height: auto;
+            &-inner{
+                &::before{
+                    left: 235px;
+                }
+            }
+            
+          }
+    }
+}
+
+
+
+
+
+.drop-down__menu{
+    position: absolute;    
+    z-index: 2;
+}
+.drop-down__menu-inner{
+    padding: 0 19px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    background-color: #fff;
+    height: 0;
+    opacity: 0;
+    transition: all .4s; 
+    overflow: hidden;
+    
+}
+.user__menu-inner{
+    position: relative;
+    border-top: 1px solid $blue;
+    border-width: 0;
+
+    &::before{
+        position: absolute;
+        content: '';
+        top: -19px;        
+        left: 0;
+        transition: all .3s;
+        width: 16px;
+        height: 18px;        
+        border: 8px solid transparent;
+        border-bottom: 8px solid $blue ;
+    }    
+}
+.user__menu{
+  width: 270px;  
+  overflow: hidden;
+  height: 0;
+  padding-top: 0; 
+  transition: all .4s; 
+  top: 180px;
+  right: 0;
+}
+.menu__list-link{
+    a{
+        border-radius: 2px;
+        padding: 13px 9px;  
+        font-size: 15px;
+        color: #54667a;
+        transition: all .3s;
+        display: block;
+        &:hover{
+            background-color: $blue;
+            color: #fff;
+        }  
+    }
+}
+.user-menu__list-link{
+   display: block;
+   a{
+      padding-left: 40px;
+      position: relative;
+      span{
+          position: absolute;
+          font-size: 15px;
+          left: 8px;
+        }
+
+   } 
+}
+
+
+
+
+  
 
 // end header----------------
 // -----------------------------
