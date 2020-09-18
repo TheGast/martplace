@@ -138,30 +138,85 @@
 
 .notifications__menu-inner{    
     overflow: hidden;
-    transition: all .1s;
+    transition: all .3s;
     background-color: transparent;
     position: absolute;
-    z-index: 1;
-    top: 18px;
+    z-index: 1;    
+    top: 130px;
     left: -27px;  
+}
+.notifications-envelope__inner
+{
+    right: -30px;
+    left: auto;
+}
+.notifications-cart__inner{
+    right: -41px;
+    left: auto;
 }
 
 .header__notifications-alarm{
     &:hover{        
         .notifications__menu-inner{
             display: block;
-            padding-top: 42px;            
-            overflow: auto;            
+            padding-top: 41px;            
+            overflow: auto;   
+            top: 18px;         
         } 
-        .notification__menu{            
+        .notification__menu{     
+            border-width: 1px;          
             overflow: visible;
             height:100%;
-            padding: 23px;            
-            opacity: 1;     
+            padding: 23px; 
+            padding-bottom: 0;           
+            opacity: 1;  
+            &::before{           
+                right: 324px;               
+            } 
         }
     }
 }
-
+.header__notifications-envelope{
+     &:hover{        
+        .notifications__menu-inner{
+            display: block;
+            padding-top: 41px;            
+            overflow: auto;   
+            top: 18px;         
+        } 
+        .notification-envelope__menu{     
+            border-width: 1px;          
+            overflow: visible;
+            height:100%;
+            padding: 23px; 
+            padding-bottom: 0;           
+            opacity: 1;  
+            &::before{           
+                left: 324px;               
+            } 
+        }
+    }
+}
+.header__notifications-cart{
+    &:hover{        
+       .notifications-cart__inner{
+           display: block;
+           padding-top: 41px;            
+           overflow: auto;   
+           top: 18px;         
+       } 
+       .notifications-cart__menu{     
+           border-width: 1px;          
+           overflow: visible;
+           height:100%;           
+           padding-bottom: 0;           
+           opacity: 1;  
+           &::before{           
+               left: 342px;               
+           } 
+       }
+   }
+}
 .header-icon{
     position: absolute;
     &::before{
@@ -200,43 +255,39 @@
         }        
     }
 }
-.notification__menu{
-
-    
-
-
-    transition: all .3s;
-    
+.notification__menu{  
+    transition: all .3s;    
     background-color: #fff;
     position: relative;
     width: 370px;
-    bottom: 0;
-    left: 0;
     z-index: 1;
     box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    border-radius: 0 0 4px 4px; 
     padding: 23px;
-    padding-bottom: 0;  
-    
-    border-radius: 0 0 4px 4px;  
-   
-
+    padding-bottom: 0;      
     overflow: hidden;
     height: 0;
     padding: 0 23px;
-    border-top: 2px solid $blue;
+    border-top: 1px solid $blue;
+    border-width: 0px;
     opacity: 0;
-
-
-
     &::before{
         position: absolute;
         content: '';
-        top: -20px;
-        left: 30px;
+        top: -19px;        
+        right: 0;
+        transition: all .5s;
         width: 16px;
         height: 18px;        
         border: 8px solid transparent;
         border-bottom: 8px solid $blue ;
+    }    
+}
+.notification-envelope__menu,
+.notifications-cart__menu{
+    &::before{              
+        left: 0;
+        
     }    
 }
 .notification__title{
@@ -260,6 +311,7 @@
     position: relative;
     padding-right: 50px;
     &-avatar{
+        flex-shrink: 0;
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -334,7 +386,158 @@
         font-size: 14px;
     }
 }
-  
+.notification-envelope__item{
+    padding-right: 0;
+    &.notification-envelope__new-message{
+        .notification-envelope__item-icon{    
+            &::before{
+                color: $blue;
+            }
+        }
+        .item-content__date{
+            color: $blue;
+        }
+    }
+}
+.notification-envelope__user{
+    display: flex;
+    justify-content: space-between;
+    &-name{
+        font-weight: 500;
+        color: #333333;
+        padding-right: 30px;
+        position: relative;
+    }
+}
+.notification-envelope__item-icon{    
+    &::before{
+        position: absolute;
+        right: 0;
+        font-size: 15px;
+        line-height: 26px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.notification-envelope__content-text{
+    color: #555555;
+    line-height: 30px;
+}
+.notification-envelope__item-icon--reply{
+    &::before{
+        position: absolute;
+        content:'';
+        background-image: url(../images/icons/reply.svg);
+       width: 16px;
+       height: 12px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.notifications-cart__menu{
+    position: relative; 
+    width: 400px;
+    padding: 0;
+    
+}
+.notifications-cart__item{
+     padding: 25px 23px;
+     border-bottom: 1px solid #e8ebf0;
+     display: flex;
+}
+.notifications-cart__img{
+    width: 80px;
+    height: 70px;
+    flex-shrink: 0;
+    img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        object-position: center;
+    }
+}
+.notifications-cart__content{
+    margin-left: 15px;
+}
+.notifications-cart__title-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.notifications-cart__title-name{
+    font-weight: 500;
+    line-height: 22px;    
+    color: #000;   
+}
+.notification-cart__item-icon{
+    margin: 0 8px;          
+    &::before{           
+     background-color: #f1ecf9;
+     color: #818c98;
+     font-size: 15px;            
+     padding: 9px;         
+     border-radius: 50%;          
+    } 
+}
+.notifications-cart__category{
+    display: flex;
+    justify-content: space-between;
+}
+.notifications-cart__category-name{
+    color: #7347c1;
+    font-size: 15px;
+    position: relative;
+    line-height: 30px;
+    padding-left: 21px;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url(../images/icons/wordpress.svg);
+        left: 0;
+        width: 15px;
+        height: 15px;
+        top: 50%;
+        transform: translateY(-50%);        
+    }
+}
+.notifications-cart__price{
+    line-height: 30px;
+    color: $blue;
+    padding: 0 11px;
+    border-radius: 20px;
+    background-color: #e6f1fd;
+}
+.notifications-cart__inner-total{
+    font-size: 18px;
+    line-height: 80px;
+    font-weight: 500;
+    text-align: right;
+    padding: 0px 23px;
+    span{
+      margin-right: 30px; 
+     }
+}
+.notifications-cart__inner-btn{
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;     
+}
+.notifications-cart__btn{
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    padding: 22px 5px;    
+}
+.notifications-cart__btn-cart{
+    background-color: #7347c1;
+    border-radius: 0 0 0 4px;
+}
+.notifications-cart__btn-checkout{
+    background-color: $blue;
+    border-radius: 0 0 4px 0;
+}
 
 // end header----------------
 // -----------------------------
@@ -481,6 +684,7 @@
         
     }
 }
+
 
 // end search---------------------------------------------------------------
 //start advantages-------------------------------------------------------------
