@@ -103,6 +103,23 @@ $(function() {
         $('.category-page__content-inner').removeClass('list');
     });
 
+    $('.single-product__wrapper .tab').on('click', function(event) {
+        var id = $(this).attr('data-id');
+            $('.single-product__wrapper').find('.tab-item').removeClass('active-tab').hide();
+            $('.single-product__wrapper .tabs').find('.tab').removeClass('active');
+            $(this).addClass('active');
+            $('#'+id).addClass('active-tab').fadeIn();
+            return false;
+        });
+
+    $('.menu-burger').on('click', function(){
+        $('.header__bottom-menu').toggleClass('active');        
+    });
+
+    $('.user-drop').on('click', function(){
+        $('.header__notifications, .header__user-info').toggleClass('active');        
+    });
+
     var mixer = mixitup('.new-product__items')
 
 });

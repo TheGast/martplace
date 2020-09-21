@@ -1,11 +1,19 @@
 html {
     box-sizing: border-box;
+    
 }
 
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+   
+}
+h1, h2, h3, h4, h5, h6, p{
+    padding: 0;
+    margin: 0;
+    font-weight: inherit;
+    font-size: inherit;
 }
 
 html,
@@ -201,5 +209,21 @@ body {
         color: #bfcad7;
     }
 }
-
+.menu-burger{
+    display: none;
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    span{
+        height: 5px;
+        width: 100%;
+        background-color: #000;
+        display: block;
+        margin: 5px 0;
+        border-radius: 10px;       
+    }
+}
 
