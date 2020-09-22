@@ -112,14 +112,39 @@ $(function() {
             return false;
         });
 
+// меню по клику-----------------------------------------------
+
     $('.menu-burger').on('click', function(){
         $('.header__bottom-menu').toggleClass('active');        
     });
 
-    $('.user-drop').on('click', function(){
-        $('.header__notifications, .header__user-info').toggleClass('active');        
+    $('.header__notifications-alarm').on('click', function(){
+        $(this).toggleClass('active');        
+    });
+    $('.header__notifications-envelope').on('click', function(){
+        $(this).toggleClass('active');        
+    });
+    $('.header__notifications-cart').on('click', function(){
+        $(this).toggleClass('active');        
+    });
+    $('.header__user').on('click', function(){
+        $(this).toggleClass('active');        
     });
 
+
+    $('.bottom-menu__list-link').on('click', function(){
+        $(this).toggleClass('active');        
+    });
+
+    $('.user-drop').on('click', function(){
+        $('.header__notifications, .header__user-info').toggleClass('active'); 
+          return false;
+    });
+
+    
+
+
+//------------------------------------------------------------------
     var mixer = mixitup('.new-product__items')
 
 });
