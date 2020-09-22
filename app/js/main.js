@@ -103,6 +103,7 @@ $(function() {
         $('.category-page__content-inner').removeClass('list');
     });
 
+
     $('.single-product__wrapper .tab').on('click', function(event) {
         var id = $(this).attr('data-id');
             $('.single-product__wrapper').find('.tab-item').removeClass('active-tab').hide();
