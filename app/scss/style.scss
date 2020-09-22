@@ -2581,6 +2581,7 @@ button.mixitup-control-active {
 .single-product {
 	background-color: #eff1f5;
 	padding-top: 67px;
+	padding-bottom: 118px;
 
 	&__inner {
 		display: flex;
@@ -3064,9 +3065,31 @@ a.aside__btn-cart {
 			background-color: #7347c1;
 		}
 	}
+}
+.more-items {
+	background-color: #f6f7fb;
+}
 
-	  
+.more-items__inner {
+	padding: 118px 0;
+}
+.more-items__title {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 50px;
+	a{
+		color: $blue;
+	}
 
+}
+.more-items__box {
+	display: flex;
+	justify-content: space-between;
+}
+.more__item.product__item{
+	.autor-avatar{
+		margin: 0;
+	}
 }
 //end single aside
 //end single items
