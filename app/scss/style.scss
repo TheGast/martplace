@@ -3223,7 +3223,8 @@ a.aside__btn-cart {
 //end single items
 //start register
 .register,
-.login-page {
+.login-page,
+.recover-page {
 	background-color: #eff1f5;
 	padding-top: 70px;
 	padding-bottom: 120px;
@@ -3332,7 +3333,15 @@ a.aside__btn-cart {
 	justify-content: space-between;
 }
 //end login
+//start recover
+.recover-page__subtitle{
+	text-align: left;
+}
+.recover-page__form-body{
+	padding-bottom: 10px;
+}
 
+//end recover
 
 
 
