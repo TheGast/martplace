@@ -3482,7 +3482,36 @@ a.aside__btn-cart {
 	background-color: #fff;
 }
 //end how it
+//start terms
+.terms {
+	background-color: #eff1f5;
+	padding-top: 100px;
+	padding-bottom: 120px;
+}
 
+.terms__inner {
+	box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+	border-radius: 4px;	
+	background-color: #fff;
+	padding-bottom: 80px;
+}
+.terms__box {
+	margin-bottom: 10px;
+}
+.terms__title {
+	font-size: 24px;
+	padding: 40px 33px 26px 33px ; 
+	border-bottom: 1px solid #e8ebf0;
+}
+.terms__text {
+	line-height: 30px;
+	color: #555555;
+	padding: 0px 33px;
+	padding-top: 24px;
+
+
+}
+//end terms
 
 
 
