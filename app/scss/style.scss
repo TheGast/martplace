@@ -3094,7 +3094,8 @@ a.aside__btn-cart {
 //end single aside
 //end single items
 //start register
-.register {
+.register,
+.login-page {
 	background-color: #eff1f5;
 	padding-top: 70px;
 	padding-bottom: 120px;
@@ -3134,6 +3135,7 @@ a.aside__btn-cart {
 		font-weight: 500;
 		border: none;
 		margin-bottom: 40px;
+		cursor: pointer;
 	}
 }
 .input-name {
@@ -3164,7 +3166,44 @@ a.aside__btn-cart {
 	}
 }
 //end register
+//start login
+.input-remember{
+	margin-left: 37px;
+	margin-bottom: 20px;
+	position: relative;
+	color: #555;
+	cursor: pointer;
+	line-height: 23px;
+	&::before{
+		position: absolute;
+		content: '';
+		border-radius: 50%;
+		border:	4px solid #e6e9ed;	
+		width: 20px;
+		height: 20px;
+		left: -36px;
+		top: 1px;		
+	}
 
+	&.active{
+							&::before{				
+				position: absolute;
+				content: '';
+				background-image: url(../images/icons/check-icon.png);
+				width: 20px;
+				height: 20px;
+				left: -36px;
+				top: 1px;	
+				z-index: 3;	
+				border:	none;	
+			}
+		}
+}
+.form__quest-login{
+	display: flex;
+	justify-content: space-between;
+}
+//end login
 
 
 
