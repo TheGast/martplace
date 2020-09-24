@@ -3565,26 +3565,31 @@ a.aside__btn-cart {
 		display: block;
 	}
 }
-.contacts {
+.contacts,
+.plan{
 	background-color: #eff1f5;
 }
-.contacts__inner {
+.contacts__inner,
+.plan__inner {
 	padding-top: 65px;
 	padding-bottom: 120px;
 }
-.contacts__title-box{
+.contacts__title-box,
+.plan__title-box{
 	text-align: center;
 	margin-bottom: 53px;
 	padding: 0px 231px;
 }
-.contacts__title {
+.contacts__title,
+.plan__title {
 	font-size: 36px;
 	margin-bottom: 20px;
 	span{
 		color:$blue;
 	}
 }
-.contacts__text {
+.contacts__text,
+.plan__text {
 	color: #555555;
 	line-height: 30px;
 }
@@ -3686,7 +3691,112 @@ a.aside__btn-cart {
 	}
 }
 //end contacts
+//start pricing plan
+.plan__body {
+	display: flex;
+	justify-content: space-between;
+}
+.plan__item {
+	max-width: 360px;
+	width: 100%;
+	border-radius: 4px;
+	box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+	background-color: #fff;
+	padding: 0px 30px;
+	padding-bottom: 30px;
+}
+.plan__item--red {
+	border-top: 3px solid #ff6a6c;
+	.plan__item-btn{
+		background-color: #ff6a6c;
+	}
+}
+.plan__item-name {
+	font-size: 24px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 32px;
+	padding: 24px 0px;
+	border-bottom: 1px solid #e8ebf0;
+}
+.plan__item-price {
+	text-align: center;
+	font-size: 36px;
+	padding-top: 28px;
+	padding-bottom: 42px;	
+	span{
+		font-size: 16px;
+		color: #555;
+	}
+	.icon-price{
+		position: relative;
+		font-size: 18px;		
+		&::before{
+			position: absolute;
+			content:'$';
+			font-size: 18px;
+			left: -8px;
+			top: -12px;
+		}
+	}
+}
+.plan__item-list {
+	margin-bottom: 40px;
+	li{
+		padding-left: 22px;
+		position: relative;
+		color: #555;
+		
+		&::before{
+			position: absolute;
+			content: '';
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background-color: #c5cad4;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);			
+		}
+		&+li{
+			margin-top: 20px;
+		}
+	}
+}
+.plan__item-list--medium {
+	color: #000;
+	font-weight: 500;
+}
+.lnr-question-circle{
+	font-size: 18px;
+	margin-left: 10px;
+	color: #000;
+}
 
+.plan__item-btn {
+	text-align: center;
+	display: block;
+	font-size: 18px;
+	line-height: 28px;
+	color: #fff;
+	font-weight: 500;
+	padding: 13px;
+	border-radius: 4px
+
+}
+.plan__item--blue {
+	border-top: 3px solid $blue;
+	.plan__item-btn{
+		background-color: $blue;
+	}
+}
+.plan__item--yellow {
+	border-top: 3px solid #feb71d;
+	.plan__item-btn{
+		background-color: #feb71d;
+	}
+}
+//end pricing plan
 
 
 
