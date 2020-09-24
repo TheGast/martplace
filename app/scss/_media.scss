@@ -1,3 +1,22 @@
+@media(max-width: 1150px) {
+	.news__inner-items {
+		flex-wrap: wrap;
+		.product__item {
+			max-width: 49%;
+			margin-bottom: 30px;
+			width: 100%;
+		}
+	}
+
+.feedback__item {
+max-width: 49%;
+	 width: 100%;
+}
+
+
+
+}
+
 @media(max-width: 1040px) {
 	.footer__inner-top {
 		background-color: #262b30;
@@ -34,6 +53,31 @@
 	.bottom-menu__list li+li {
 		margin-left: 15px;
 	}
+}
+
+@media(max-width: 880px) {
+	.advantages-bottom__inner {
+		flex-wrap: wrap;
+	}
+
+	.advantages-bottom__item {
+		&+.advantages-bottom__item {
+			margin-top: 30px;
+		}
+
+		max-width: 100%;
+		width: 100%;
+	}
+	.feedback__inner-items{
+		flex-wrap: wrap;
+	}
+	.feedback__item {
+		&+.feedback__item{
+			margin-top: 30px;
+		}
+		max-width: 100%;
+			 width: 100%;
+		}
 }
 
 @media(max-width: 780px) {
@@ -97,11 +141,6 @@
 		text-align: center;
 	}
 
-
-
-	
-
-
 	.header__join--footer {
 		display: block;
 	}
@@ -109,18 +148,28 @@
 	.header__join {
 		display: none;
 	}
+
+	.news__inner-items {
+		.product__item {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
 }
-@media(max-width: 590px){
-	.header__user{
+
+@media(max-width: 590px) {
+	.header__user {
 		padding-left: 30px;
 	}
-	.header__notifications
-	{
-	 display: none;
- }
-	.user-drop{
+
+	.header__notifications {
+		display: none;
+	}
+
+	.user-drop {
 		display: block;
 	}
+
 	.header__notifications.active {
 		display: flex;
 		position: absolute;
@@ -166,28 +215,49 @@
 	.header__logo img {
 		width: auto;
 	}
+	
+	
+	.feedback__item-autor {  
+		display: flex;
+	justify-content: center; 
+    align-items: center;
+    padding-right: 0px;
+    margin-bottom: 21px;
+		position: relative;		
+			&::after{
+				display: none;
+			}
+		
+		
+}
 }
 
-@media(max-width: 410px) {
-	
-}
+@media(max-width: 410px) {}
 
 @media(max-width: 390px) {
 
 	.header__bottom-search {
 		max-width: 233px;
 	}
+
 	.header__user {
 		margin-left: 15px;
 	}
-	.header__user-info{
+
+	.header__user-info {
 		display: none;
 	}
+
 	.header__notifications.active {
-    right: 50px;
-    padding-right: 30px;
-    left: 0;
-    
+		right: 50px;
+		padding-right: 30px;
+		left: 0;
+
+	}
+	.news__inner-items {	
+		.stats-view {
+			margin-left: 15px;
+	}
 }
 
 

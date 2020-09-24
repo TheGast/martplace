@@ -146,6 +146,8 @@ $(function() {
 
 
 //------------------------------------------------------------------
+    $('input, select').styler();
+    
     var mixer = mixitup('.new-product__items')
 
 });
