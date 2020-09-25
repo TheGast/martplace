@@ -12,11 +12,23 @@
 max-width: 49%;
 	 width: 100%;
 }
-
-
-
+.reason__item {
+    max-width: 49%;
+    
 }
-
+.start__sell, .start__shop {
+    padding: 98px 40px;   
+}
+}
+@media(max-width: 1130px){
+	.product__item {
+		max-width: 49%;		
+	}
+	.new-product__filter button {
+				padding: 8px 8px;	
+	
+}
+}
 @media(max-width: 1040px) {
 	.footer__inner-top {
 		background-color: #262b30;
@@ -59,6 +71,9 @@ max-width: 49%;
 	.bottom-menu__list li+li {
 		margin-left: 15px;
 	}
+	.new-product__filter button+button {
+		margin-left: 0px;
+	}
 
 }
 
@@ -86,24 +101,22 @@ max-width: 49%;
 		max-width: 100%;
 			 width: 100%;
 		}
-		.search__inner-form {
-    position: absolute;
-    bottom: 0;
-    -webkit-transform: translateY(50%);
-    -ms-transform: translateY(50%);
-    transform: translateY(50%);
-    width: 100%;
-    padding: 40px;
-    padding: 40px 10px;
-    background-color: #fff;
-    -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.08);
-    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.08);
-    border-radius: 6px;
-    z-index: 3;
+		.search__inner-form {    
+    padding: 40px 10px;    
 }
 .search__inner-form {  
     padding: 40px 10px;
    
+}
+.new-product__filter button {
+    margin-bottom: 10px;
+}
+.start__inner {
+    flex-wrap: wrap;
+}
+.start__sell, .start__shop {
+	max-width: 100%; 
+	width: 100%;
 }
 }
 @media(max-width: 805px){
@@ -172,6 +185,8 @@ max-width: 49%;
 	}
 }
 
+
+
 @media(max-width: 740px) {
 	.footer__news {
 		max-width: 100%;
@@ -210,8 +225,25 @@ max-width: 49%;
 		width: 154px;
 		padding: 0 45px 0 5px;
 	}
+	.product__item {
+		max-width: 100%;		
+	}
+	.reason__item {
+		max-width: 100%;
+		
+	}
 }
-
+@media(max-width: 630px) {
+	.statistic__inner {
+	flex-wrap: wrap;
+	}
+		.statistic__item{
+			max-width: 49%;
+			width: 100%;
+			margin: 15px 0;
+		}
+	
+}
 @media(max-width: 590px) {
 	.header__user {
 		padding-left: 30px;
@@ -366,6 +398,16 @@ max-width: 49%;
 		}
 	}
 }
+.product__item-content {
+    padding: 15px;
+}
+.product__item-stats {  
+    padding: 20px 15px;   
+}
+.start__title {
+    margin: 18px 0px 19px;
+    font-size: 33px;
+}
 }
 
 @media(max-width: 420px) {
@@ -477,5 +519,10 @@ max-width: 49%;
 	.product__item .content__text {
 	
 		font-size: 14px;
+	}
+	.statistic__item{
+		max-width: 100%;
+		
+		
 	}
 }

@@ -1548,11 +1548,13 @@ button.mixitup-control-active {
 }
 
 .slick-active {
-	max-width: 360px;
-
+	max-width: 100%;
 	&+.slick-active {
-		margin-left: 30px;
+		margin-left:10px;
 	}
+}
+.follower__item.product__item{
+	max-width: 100%;
 }
 
 // end followers

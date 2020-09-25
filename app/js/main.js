@@ -11,7 +11,16 @@ $(function() {
         prevArrow: '<button type="button" class="slick-prev slick-arrow"><img src="images/icons/slick-prev.svg"></button>',
         nextArrow: '<button type="button" class="slick-next slick-arrow"><img src="images/icons/slick-next.svg"></button>',
         slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToScroll: 1, 
+        responsive:[  
+        {    
+        breakpoint: 590, 
+        settings:{
+            prevArrow: false,
+            nextArrow: false,     
+        }       
+        },
+    ]
     });
 
     $(".followers__slider-items").slick({
@@ -19,6 +28,33 @@ $(function() {
         nextArrow: '<button type="button" class="slick-next slick-arrow"><img src="images/icons/slick-next.svg"></button>',
         slidesToShow: 3,
         slidesToScroll: 3,
+        responsive:[  
+            {    
+            breakpoint: 1120, 
+            settings:{        
+                slidesToShow: 2,
+                slidesToScroll: 2,  
+            }       
+            },
+            {    
+                breakpoint: 700, 
+                settings:{
+                    
+                    slidesToShow: 1,
+                    slidesToScroll: 1,  
+                }       
+                },
+                {    
+                    breakpoint: 590, 
+                    settings:{        
+                        slidesToShow: 1,
+                        slidesToScroll: 1, 
+                        prevArrow: false,
+                        nextArrow: false,  
+                    }       
+                    },
+             
+        ]
     });
  
 //-----------------------------------------------------------------------------------
