@@ -176,6 +176,31 @@
 		position: relative;
 	}
 }
+.header__user.user--unloginned{
+	display: none;
+}
+.header__notifications.user--unloginned
+ {
+	display: flex;
+	align-items: center;
+	margin: 0px 48px;
+
+	&>div+div {
+		margin-left: 30px;
+	}
+
+	&-alarm,
+	&-envelope,
+	&-cart {
+		width: 20px;
+		height: 20px;
+		position: relative;
+	}
+	.header__notifications-alarm,
+	.header__notifications-envelope{
+		display: none;
+	}	
+}
 
 .notifications__menu-inner {
 	overflow: hidden;
@@ -965,18 +990,18 @@
 	display: block;
 }
 
-.header__user--on {
-	display: flex;
-}
+// .header__user--on {
+// 	display: flex;
+// }
 
-.header__join-register--on {
+.header__join-register.user--unloginned {
 	display: block;
 	margin-left: 15px;
 	margin-right: -50px;
 
 }
 
-.header__join-register--off {
+.header__join-register {
 	display: none;
 }
 
