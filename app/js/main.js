@@ -129,14 +129,14 @@ $(function() {
     $('.style-list').on('click', function(){
         $('.style-list').addClass('active');
         $('.style-grid').removeClass('active');
-        $('.category-page__content-inner').addClass('list');
+        $('.category-page__content-inner, .favorites-page').addClass('list');
         
     });
     
     $('.style-grid').on('click', function(){
         $('.style-grid').addClass('active');
         $('.style-list').removeClass('active');
-        $('.category-page__content-inner').removeClass('list');
+        $('.category-page__content-inner, .favorites-page').removeClass('list');
     });
 
 
@@ -160,7 +160,8 @@ $(function() {
 // меню по клику-----------------------------------------------
 
     $('.menu-burger').on('click', function(){
-        $('.header__bottom-menu').toggleClass('active');        
+        $('.header__bottom-menu').toggleClass('active');   
+        $('.bottom-menu__list-link').removeClass('active');       
     });
 
     $('.header__notifications-alarm').on('click', function(){
