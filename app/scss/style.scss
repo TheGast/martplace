@@ -209,7 +209,7 @@
 	transition: all .3s;
 	background-color: transparent;
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	top: 130px;
 	left: -27px;
 }
@@ -1454,13 +1454,15 @@
 
 .new-product__items {
 	display: flex;
-	justify-content: space-between;
+	margin-left: -30px;
 	flex-wrap: wrap;
 	margin-bottom: 30px;
 }
 
 .new-product__item {
 	margin-bottom: 30px;
+	flex-basis: calc(33.3333% - 30px);
+	margin-left: 30px;
 
 	&:hover .new-product__item-img--hover {
 		opacity: 0.9;
@@ -2286,8 +2288,10 @@ button.mixitup-control-active {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 1;
 	.select-items{
 		margin-left: 30px;
+	
 	}
 	.select-price{
 		.jq-selectbox__select {
@@ -2304,7 +2308,7 @@ button.mixitup-control-active {
 		}
 	}
 	.jq-selectbox {
-    z-index: 10;
+    z-index: 1;
     vertical-align: middle;
     cursor: pointer;
     width: 219px;
@@ -2417,17 +2421,26 @@ text-align: center;
 		border-bottom: 1px solid #e7ebee;
 		display: flex;
 		justify-content: space-between;
+		cursor: pointer;
 
 		button {
 			font-size: 12px;
 			color: #555555;
 			background-color: transparent;
 			border: none;
-		}
+			transform: rotate(-90deg);
+			transition: all .3s;
+			&.on{
+				transform: rotate(0deg);
+			}
+		
+			}
 	}
+	
 
 	.aside__list {
 		margin-top: 30px;
+		display: none;
 
 		li {
 			display: flex;
@@ -2450,7 +2463,14 @@ text-align: center;
 				padding-left: 10px;
 			}
 		}
+		&.active{
+		
+				display: block;
+		
+		}
+	
 	}
+	
 }
 
 .aside__categories {
@@ -2499,7 +2519,9 @@ text-align: center;
 
 .aside__range {
 	text-align: center;
-
+form{
+	display: none;
+}
 	.irs--flat {
 		margin-top: 8px;
 	}
@@ -2556,13 +2578,15 @@ text-align: center;
 		}
 	}
 
-	a {
+	.range__btn{
 		padding: 15px 30px;
 		color: #fff;
 		background-color: $blue;
 		font-weight: 500;
 		font-size: 15px;
 		border-radius: 30px;
+		border: none;
+		cursor: pointer;
 	}
 }
 
@@ -2658,7 +2682,7 @@ text-align: center;
 				margin-left: 15px;
 			}
 
-			a {
+			a, span {
 				padding: 13px 22px;
 				background-color: #fff;
 				border-radius: 20px;
@@ -2672,7 +2696,7 @@ text-align: center;
 				}
 			}
 
-			&.pagination-btn:hover {
+			&.pagination-btn{
 				a {
 					background-color: #7347c1;
 					color: #fff;
@@ -3186,7 +3210,7 @@ text-align: center;
 				height: 20px;
 				left: -36px;
 				top: 1px;
-				z-index: 3;
+				z-index: 1;
 				border: none;
 			}
 		}
@@ -4206,11 +4230,14 @@ width: 143px;
 	}
 }
 
-.aside__btn {	
+.aside__btn-search {	
 	border-radius: 30px;
 	right: 0;
 	border: none;
 	cursor: pointer;
+	position: absolute;
+	background-color: $blue;
+	padding: 0px 20px;
 
 	span {
 		color: #fff;

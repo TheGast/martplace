@@ -186,6 +186,19 @@ $(function() {
         $('.header__notifications, .header__user-info').toggleClass('active'); 
           return false;
     });
+    $('.aside__title--categories').on('click', function(){
+        $('.aside__list--categories').slideToggle('active');  
+        $('.aside__title--categories button').toggleClass('on');  
+
+    });
+    $('.aside__title--filter').on('click', function(){
+        $('.aside__list--filter').slideToggle('active');        
+        $('.aside__title--filter button').toggleClass('on');        
+    });
+    $('.aside__title--range').on('click', function(){
+        $('.aside__range form').slideToggle('active');        
+        $('.aside__range button').toggleClass('on');        
+    });
 
     
 
