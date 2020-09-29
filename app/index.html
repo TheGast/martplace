@@ -5,18 +5,1560 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <div class="box"></div>
+    <div class="wrapper">
+        <div class="content">
+
+            <header class="header">
+                <div class="header__top">
+                  <div class="container">
+                    <div class="header__top-inner">
+                      <a href="#" class="header__logo">
+                        <img src="images/logo.png" alt="">
+                      </a>
+                      <a href="#" class="header__join">Become a Seller</a>
+                      <a href="#" class="header__join-register header__join-register user--unloginned">Login</a>
+                    
+                      <div class="header__notifications user--unloginned">
+                        <div class="header__notifications-alarm">
+                          <a class="lnr-alarm header-icon" href="#"><span>25</span></a>
+                          <div class="notifications-alarm__inner notifications__menu-inner">
+        
+                            <div class="notification-alarm__menu notification__menu">
+                              <div class="notification__title">
+                                <div class="notification__title-text">My Notifications</div>
+                                <a class="notification__title-link" href="#">View All</a>
+                              </div>
+                              <a href="#" class="notification__item ">
+                                <span class="notification__item-icon lnr-heart"></span>
+                                <div class="notification__item-avatar">
+                                  <img src="images/content/notification-user.jpg" alt="">
+                                </div>
+                                <div class="notification__item-content">
+                                  <div class="item-content__user">
+                                    <span>Anderson</span> added to Favourite
+                                  </div>
+                                  <div class="item-content__product">
+                                    Marketify Coffee Shop
+                                  </div>
+                                  <div class="item-content__date">Just now
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#" class="notification__item ">
+                                <span class="notification__item-icon lnr-bubble"></span>
+                                <div class="notification__item-avatar">
+                                  <img src="images/content/notification-user.jpg" alt="">
+                                </div>
+                                <div class="notification__item-content">
+                                  <div class="item-content__user">
+                                    <span>Michael Jorden</span> commented
+                                  </div>
+                                  <div class="item-content__product">
+                                    <span>on</span> MartPlace Extension Bundle
+                                  </div>
+                                  <div class="item-content__date">2 hours ago
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#" class="notification__item ">
+                                <span class="notification__item-icon lnr-cart"></span>
+                                <div class="notification__item-avatar">
+                                  <img src="images/content/notification-user.jpg" alt="">
+                                </div>
+                                <div class="notification__item-content">
+                                  <div class="item-content__user">
+                                    <span>Moshed</span> Purchased
+                                  </div>
+                                  <div class="item-content__product">
+                                    Bryson-Responsive Template
+                                  </div>
+                                  <div class="item-content__date">6 hours ago
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#" class="notification__item ">
+                                <span class="notification__item-icon lnr-star"></span>
+                                <div class="notification__item-avatar">
+                                  <img src="images/content/notification-user.jpg" alt="">
+                                </div>
+                                <div class="notification__item-content">
+                                  <div class="item-content__user">
+                                    <span>Tamim</span> wrote a review on
+                                  </div>
+                                  <div class="item-content__product">
+                                    Rida-Responsive vCard Temp... </div>
+                                  <div class="item-content__date">2 days ago
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="header__notifications-envelope">
+                          <a class="lnr-envelope header-icon" href="#"><span>6</span></a>
+                          <div class="notifications-envelope__inner notifications__menu-inner">
+                            <div class="notification-envelope__menu notification__menu">
+                              <div class="notification__title">
+                                <div class="notification__title-text">My Messages</div>
+                                <a class="notification__title-link" href="#">View All</a>
+                              </div>
+                              <a href="#"
+                                class="notification-envelope__item notification__item notification-envelope__new-message">
+                                <div class="notification__item-avatar">
+                                  <img src="images/content/notification-user.jpg" alt="">
+                                </div>
+                                <div class=" notification__item-content">
+                                  <div class="notification-envelope__user item-content__user">
+                                    <div class=" notification-envelope__user-name item-content__user-name">
+                                      Washim <span class="notification-envelope__item-icon lnr-envelope"></span>
+                                    </div>
+                                    <div class="item-content__date">Just now
+                                    </div>
+                                  </div>
+                                  <div class="notification-envelope__content-text item-content__text">
+                                    Hello John Smith! Nunc placerat id...
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#"
+                                class="notification-envelope__item notification__item notification-envelope__new-message">
+                                <div class="notification__item-avatar">
+                                  <img src="images/content/notification-user.jpg" alt="">
+                                </div>
+                                <div class=" notification__item-content">
+                                  <div class="notification-envelope__user item-content__user">
+                                    <div class=" notification-envelope__user-name item-content__user-name">
+                                      Washim <span class="notification-envelope__item-icon lnr-envelope"></span>
+                                    </div>
+                                    <div class="item-content__date">2 hours ago
+                                    </div>
+                                  </div>
+                                  <div class="notification-envelope__content-text item-content__text">
+                                    Hello John Smith! Nunc placerat id...
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#" class="notification-envelope__item notification__item">
+                                <div class="notification__item-avatar">
+                                  <img src="images/content/notification-user.jpg" alt="">
+                                </div>
+                                <div class=" notification__item-content">
+                                  <div class="notification-envelope__user item-content__user">
+                                    <div class=" notification-envelope__user-name item-content__user-name">
+                                      EchoTheme <span class="notification-envelope__item-icon--reply"></span>
+                                    </div>
+                                    <div class="item-content__date">Jul 16
+                                    </div>
+                                  </div>
+                                  <div class="notification-envelope__content-text item-content__text">
+                                    Hello John Smith! Nunc placerat id...
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#" class="notification-envelope__item notification__item">
+                                <div class="notification__item-avatar">
+                                  <img src="images/content/notification-user.jpg" alt="">
+                                </div>
+                                <div class=" notification__item-content">
+                                  <div class="notification-envelope__user item-content__user">
+                                    <div class=" notification-envelope__user-name item-content__user-name">
+                                      Themeluva
+                                    </div>
+                                    <div class="item-content__date">May 23
+                                    </div>
+                                  </div>
+                                  <div class="notification-envelope__content-text item-content__text">
+                                    Hello John Smith! Nunc placerat id...
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#" class="notification-envelope__item notification__item">
+                                <div class="notification__item-avatar">
+                                  <img src="images/content/notification-user.jpg" alt="">
+                                </div>
+                                <div class=" notification__item-content">
+                                  <div class="notification-envelope__user item-content__user">
+                                    <div class=" notification-envelope__user-name item-content__user-name">
+                                      Adnan
+                                    </div>
+                                    <div class="item-content__date">Mar 26
+                                    </div>
+                                  </div>
+                                  <div class="notification-envelope__content-text item-content__text">
+                                    Hello John Smith! Nunc placerat id...
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="header__notifications-cart ">
+                          <a class="lnr-cart header-icon" href="#"><span>2</span></a>
+                          <div class="notifications-cart__inner notifications__menu-inner">
+                            <div class="notifications-cart__menu notification__menu">
+                              <div href="#" class="notifications-cart__item">
+                                <div class="notifications-cart__img">
+                                  <img src="images/content/sell-bg.jpg" alt="">
+                                </div>
+                                <div class=" notifications-cart__content">
+                                  <div class="notifications-cart__title">
+        
+                                    <div class="notifications-cart__title-inner">
+                                      <a href="#" class=" notifications-cart__title-name">
+                                        Finance and Consulting Business Theme
+                                      </a>
+                                      <a href="#" class="notification-cart__item-icon lnr-trash"></a>
+                                    </div>
+                                    <div class=" notifications-cart__category">
+                                      <span class="notifications-cart__category-name">Wordpress</span>
+                                      <span class="notifications-cart__price">$60</span>
+                                    </div>
+        
+                                  </div>
+        
+                                </div>
+                              </div>
+                              <div href="#" class="notifications-cart__item">
+                                <div class="notifications-cart__img">
+                                  <img src="images/content/sell-bg.jpg" alt="">
+                                </div>
+                                <div class=" notifications-cart__content">
+                                  <div class="notifications-cart__title">
+        
+                                    <div class="notifications-cart__title-inner">
+                                      <a href="#" class=" notifications-cart__title-name">
+                                        Flounce - Multipurpose
+                                        OpenCart Theme
+                                      </a>
+                                      <a href="#" class="notification-cart__item-icon lnr-trash"></a>
+                                    </div>
+                                    <div class=" notifications-cart__category">
+                                      <span class="notifications-cart__category-name">Wordpress</span>
+                                      <span class="notifications-cart__price">$20</span>
+                                    </div>
+        
+                                  </div>
+        
+                                </div>
+                              </div>
+                              <div class="notifications-cart__inner-total">
+                                <span>Total :</span>$80
+                              </div>
+                              <div class="notifications-cart__inner-btn">
+                                <a class="notifications-cart__btn notifications-cart__btn-cart" href="#">Go to Cart</a>
+                                <a class="notifications-cart__btn notifications-cart__btn-checkout" href="#">Go to Checkout</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <div class="header__user user--unloginned">
+                        <span class="user-drop lnr-chevron-left"></span>
+                        <a class="header__user-avatar" href="#">
+                          <img src="images/content/sell-bg.jpg" alt="">
+                        </a>
+                        <div class="header__user-info">
+                          <a class="user-info__name" href="#">Taofiq Hakim</a>
+                          <a class="user-info__balance" href="#">$20.45</a>
+                        </div>
+                        <div class="user__menu drop-down__menu">
+                          <div class="user__menu-inner drop-down__menu-inner">
+                            <ul class="user__menu-list menu__list">
+                              <li class="user-menu__list-link menu__list-link"><a href="#"><span class="lnr-user"></span>Profile
+                                  Page</a></li>
+                              <li class="user-menu__list-link menu__list-link"><a href="#"><span class="lnr-home"></span>
+                                  Dashboard</a></li>
+                              <li class="user-menu__list-link menu__list-link"><a href="#"><span class="lnr-cog"></span> Account
+                                  Settings</a></li>
+                              <li class="user-menu__list-link menu__list-link"><a href="#"><span class="lnr-cart"></span> Your
+                                  Purchases</a></li>
+                              <li class="user-menu__list-link menu__list-link"><a href="#"><span class="lnr-heart"></span> Your
+                                  Favorites</a></li>
+                              <li class="user-menu__list-link menu__list-link"><a href="#"><span class="lnr-dice"></span> Add
+                                  Credits</a></li>
+                              <li class="user-menu__list-link menu__list-link"><a href="#"><span class="lnr-chart-bars"></span>
+                                  Sales Statements</a></li>
+                              <li class="user-menu__list-link menu__list-link"><a href="#"><span class="lnr-upload"></span>
+                                  Upload Item</a></li>
+                              <li class="user-menu__list-link menu__list-link"><a href="#"><span class="lnr-book"></span> Edit
+                                  Item</a></li>
+                              <li class="user-menu__list-link menu__list-link"><a href="#"><span class="lnr-briefcase"></span>
+                                  Withdrawals</a></li>
+                              <li class="user-menu__list-link menu__list-link"><a href="#"><span class="lnr-exit"></span>
+                                  Logout</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="header__bottom">
+                  <div class="container">
+                    <div class="header__bottom-inner">
+                      <div class="menu-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <nav class="header__bottom-menu bottom-menu ">
+                       
+                        <ul class="bottom-menu__list">
+                          <li class="bottom-menu__list-link"><a href="#">HOME</a>
+                            <div class="bottom__submenu drop-down__menu">
+                              <div class="bottom__submenu-inner drop-down__menu-inner">
+                                <ul class=" bottom-submenu__list menu__list">
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Home One Multi User</a></li>
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Home Two Single User</a></li>
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Home Three Product</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="bottom-menu__list-link"><a href="#">all products </a>
+                            <div class="bottom__submenu drop-down__menu">
+                              <div class="bottom__submenu-inner drop-down__menu-inner">
+                                <ul class=" bottom-submenu__list menu__list">
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Recent Items</a></li>
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Popular Items</a></li>
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Featured Items</a></li>
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Free Templates</a></li>
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Follow Feed</a></li>
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Top Authors</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="bottom-menu__list-link"><a href="#">wordpress</a>
+                            <div class="bottom__submenu drop-down__menu">
+                              <div class="bottom__submenu-inner drop-down__menu-inner">
+                                <ul class=" bottom-submenu__list menu__list">
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Popular Items</a></li>
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Admin Templates</a></li>
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Blog / Magazine / News</a></li>
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Creative</a></li>
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Corporate Business</a></li>
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Resume Portfolio</a></li>
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">eCommerce</a></li>
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Entertainment</a></li>
+                                  <li class="bottom-submenu__link menu__list-link"><a href="#">Landing Pages </a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="bottom-menu__list-link"><a href="#">festures </a></li>
+                          <li class="bottom-menu__list-link bottom-menu__list-link--nr"><a href="#">Pages</a>
+        
+        
+        
+                            <div class="bottom__submenu drop-down__menu bottom__submenu--big">
+                              <div class="bottom__submenu-inner drop-down__menu-inner bottom__submenu-inner--big">
+        
+                                <div class="bottom-submenu__box">
+                                  <div class="bottom-submenu__column bottom-submenu__column--left">
+                                    <div class="bottom-submenu-title">
+                                      MartPlace Pages
+                                    </div>
+                                    <ul class=" bottom-submenu__list menu__list">
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Home Page One</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Home Page Two</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Home Page Three</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Products Grid</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Products List</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Category Grid Sidebar</a>
+                                      </li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Category List Sidebar</a>
+                                      </li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Search Product</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Single Product V-1</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Single Product V-2</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Single Product V-3</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Single Items Comments</a>
+                                      </li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Single Items Reviews</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Single Items Support</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Single Items FAQs</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Favorites Items</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Author Profile</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Author Items</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Customer Reviews</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Followers</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Following</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Product View Variations</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="bottom-submenu__column bottom-submenu__column--center">
+                                    <div class="bottom-submenu-title">
+                                      Dashboard
+                                    </div>
+                                    <ul class=" bottom-submenu__list menu__list">
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Dashboard</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Account Settings</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Author Purchases</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Items Rating</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Add Credits</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Statements</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Invoice</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Upload Item</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Edit Items</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Withdrawals</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Add Payment Method</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="bottom-submenu__column bottom-submenu__column--right">
+                                    <div class="bottom-submenu-title">
+                                      Others Pages
+                                    </div>
+                                    <ul class=" bottom-submenu__list menu__list">
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Notifications</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Message Inbox</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Message Compose</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Shopping Cart</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Checkout</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Login</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Register</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Recovery Password</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Support Forum</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Forum Details</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">How It Works</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">About Us</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Pricing Plan</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Testimonials</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">FAQs</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">FAQs Details</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Affiliates</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Terms & Conditions</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Blog V-1</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Blog V-2</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Blog Details</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Contact Us</a></li>
+                                      <li class="bottom-submenu__link menu__list-link"><a href="#">Menu & Footer Variation</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>                       
+                              </div>
+                            </div>
+        
+        
+        
+        
+        
+                          </li>
+                        </ul>
+                      </nav>
+                      <div class="header__bottom-search">
+                        <form>
+                          <input type="text" placeholder="Search product here..." required>
+                          <button type="submit"><img src="images/icons/search-icon.svg" alt=""></button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </header>
+             
+              
+
+             <section class="search" style=" background-image: linear-gradient( to left, rgb(0,48,222) 0%, rgb(23,69,237) 54%, rgb(46,90,251) 100%)">
+                <div class="container">
+                    <div class="search__inner">
+                        <h2 class="search__inner-title">
+                            Create Your Own <span>Digital Product Marketplace</span>
+                        </h2>
+                        <div class="search__inner-text">
+                            MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+                        </div>
+                        <div class="search__inner-btn">
+                            <a href="#">View All Products</a>
+                            <a href="#">Popular Products</a>
+                        </div>
+                        <div class="search__inner-form ">
+                            <form>
+                                <div class="search__inner-item">
+                                    <input type="text" placeholder="Search your products..." required>
+                                    <select class="search__inner-categories">
+                                        <option value="">All Categories</option>
+                                        <option value="">All Categories</option>
+                                        <option value="">All Categories</option>                                        
+                                    </select>
+                                </div>
+                                <button type="submit">Search Now</button>
+                            </form>
+                        </div>
+                        <div class="search__inner-box1"></div>
+                        <div class="search__inner-box2"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="advantages">
+                <div class="container">
+                    <div class="advantages__inner">
+                        <div class="advantages__inner-item inner-item">
+                            <div class="inner-item-img" href="#">
+                                <img src="images/icons/advantages-item1.png" alt="">
+                            </div>
+                            <div class="inner-item-title" href="#">
+                                Best UX Research
+                            </div>
+                            <div class="inner-item-text" href="#">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                                mattis,
+                                leo quam aliquet diam congue is laoreet elit metus.
+                            </div>
+                        </div>
+                        <div class="advantages__inner-item inner-item">
+                            <div class="inner-item-img" href="#">
+                                <img src="images/icons/advantages-item2.png" alt="">
+                            </div>
+                            <div class="inner-item-title" href="#">
+                                Fully Responsive
+                            </div>
+                            <div class="inner-item-text" href="#">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                                mattis,
+                                leo quam aliquet diam congue is laoreet elit metus.
+                            </div>
+                        </div>
+                        <div class="advantages__inner-item inner-item">
+                            <div class="inner-item-img" href="#">
+                                <img src="images/icons/advantages-item3.png" alt="">
+                            </div>
+                            <div class="inner-item-title" href="#">
+                                Buy & Sell Easily
+                            </div>
+                            <div class="inner-item-text" href="#">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                                mattis,
+                                leo quam aliquet diam congue is laoreet elit metus.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+
+             <section class="featured section-box">
+                <div class="container">
+                    <div class="featured__title section__title">
+                        <div class="featured__title-text section__title-text  ">Weekly Featured Products </div>
+                        <div class="featured__title-btn section__title-btn"></div>
+                    </div>
+
+                    <div class="featured__items">
+
+                        <div class="featured__item product__item">
+                            <div class="featured__item-img product__item-img"
+                                style="background-image: url(images/content/sell-bg.jpg">
+                            </div>
+                            <div class="featured__item-content--inner ">
+                                <div class="featured__item-content product__item-content">
+                                    <a href="#" class="content__title">
+                                        One Page Resume Template
+                                    </a>
+                                    <div class="content__autor">
+                                        <div class="autor-avatar" style="background-image: url(images/content/sell-bg.jpg);">
+                                        </div>
+                                        <a href="#" class="auror-name">AazzTech</a>
+                                        <a href="#" class="autor-category">WordPress
+                                            <img src="images/icons/wordpress.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="content__text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                    </div>
+                                    <div class="content__category">
+                                        <a href="#">website</a>
+                                        <a href="#">plugin</a>
+                                        <a href="#">landing page</a>
+                                    </div>
+                                </div>
+                                <div class="featured__item-stats product__item-stats">
+                                    <div class="stats__inner">
+                                        <div class="stats-price">$10 - $50</div>
+                                        <div class="stats-like">90</div>
+                                        <div class="stats-cell">246</div>
+                                    </div>
+                                    <div class="star-rate"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured__item product__item">
+                            <div class="featured__item-img product__item-img"
+                                style="background-image: url(images/content/sell-bg.jpg">
+                            </div>
+                            <div class="featured__item-content--inner ">
+                                <div class="featured__item-content product__item-content">
+                                    <a href="#" class="content__title">
+                                        E-commerce Shopping Cart
+                                    </a>
+                                    <div class="content__autor">
+                                        <div class="autor-avatar" style="background-image: url(images/content/sell-bg.jpg);">
+                                        </div>
+                                        <a href="#" class="auror-name">AazzTech</a>
+                                        <a href="#" class="autor-category">WordPress
+                                            <img src="images/icons/wordpress.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="content__text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                    </div>
+                                    <div class="content__category">
+                                        <a href="#">website</a>
+                                        <a href="#">plugin</a>
+                                        <a href="#">landing page</a>
+                                    </div>
+                                </div>
+                                <div class="featured__item-stats product__item-stats">
+                                    <div class="stats__inner">
+                                        <div class="stats-price">$10 - $50</div>
+                                        <div class="stats-like">90</div>
+                                        <div class="stats-cell">246</div>
+                                    </div>
+                                    <div class="star-rate"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured__item product__item">
+                            <div class="featured__item-img product__item-img"
+                                style="background-image: url(images/content/sell-bg.jpg">
+                            </div>
+                            <div class="featured__item-content--inner ">
+                                <div class="featured__item-content product__item-content">
+                                    <a href="#" class="content__title">
+                                        E-commerce Shopping Cart
+                                    </a>
+                                    <div class="content__autor">
+                                        <div class="autor-avatar" style="background-image: url(images/content/sell-bg.jpg);">
+                                        </div>
+                                        <a href="#" class="auror-name">AazzTech</a>
+                                        <a href="#" class="autor-category">WordPress
+                                            <img src="images/icons/wordpress.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="content__text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                    </div>
+                                    <div class="content__category">
+                                        <a href="#">website</a>
+                                        <a href="#">plugin</a>
+                                        <a href="#">landing page</a>
+                                    </div>
+                                </div>
+                                <div class="featured__item-stats product__item-stats">
+                                    <div class="stats__inner">
+                                        <div class="stats-price">$10 - $50</div>
+                                        <div class="stats-like">90</div>
+                                        <div class="stats-cell">246</div>
+                                    </div>
+                                    <div class="star-rate"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                       
 
 
 
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section class="new-product section-box">
+                <div class="container">
+                    <div class="new-product__title section__title">
+                        <div class="new-product_title-text section__title-text  ">Newest Release Products </div>
+                        <select class="new-product__title-drop" data-placeholder="Filter by:">
+                            <option value=""></option>
+                            <option value="">Plugins</option>
+                            <option value="">WordPress</option>
+                            <option value="">Site Template</option>
+                            <option value="">PSD Template</option>
+                            <option value="">Joomla</option>
+                            <option value="">User Interface</option>
+                            <option value="">Landing Page</option>
+                            <option value="">Software</option>
+                            </select>
+                    </div>
+                    <div class="new-product__filter">
+                        <button type="button" data-filter=".category-plugins">Plugins</button>
+                        <button type="button" data-filter=".category-wordpress">WordPress</button>
+                        <button type="button" data-filter=".category-site">Site Template</button>
+                        <button type="button" data-filter=".category-psd">PSD Template</button>
+                        <button type="button" data-filter=".category-joomla">Joomla</button>
+                        <button type="button" data-filter=".category-interface">User Interface</button>
+                        <button type="button" data-filter=".category-landing">Landing Page</button>
+                        <button type="button" data-filter=".category-software">Software</button>
+                    </div>
+                    <div class="new-product__items">
+                        <div class="new-product__item product__item mix category-plugins category-landing"
+                            data-order="1">
+                            <div class="new-product__item-img product__item-img"
+                                style="background-image: url(images/content/sell-bg.jpg);">
+                                <div class="new-product__item-img--hover"
+                                    style="background-image: linear-gradient( to left, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%) ;">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="new-product__item-content product__item-content">
+                                <a href="#" class="content__title">
+                                    E-commerce Shopping Cart
+                                </a>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/content/sell-bg.jpg);"></div>
+                                    <a href="#" class="auror-name">Theme-Valley</a>
+                                    <a href="#" class="autor-category">Plugin
+                                        <img src="images/icons/wordpress.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="new-product__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
+                        <div class="new-product__item product__item mix category-interface" data-order="2">
+                            <div class="new-product__item-img product__item-img"
+                                style="background-image: url(images/content/sell-bg.jpg);">
+                    <div class="new-product__item-img--hover"
+                                    style="background-image: linear-gradient( to left, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%) ;">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="new-product__item-content product__item-content">
+                                <a href="#" class="content__title">
+                                    Marketify Coffee Shop
+                                </a>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/content/sell-bg.jpg);"></div>
+                                    <a href="#" class="auror-name">EchoTheme</a>
+                                    <a href="#" class="autor-category">PSD
+                                        <img src="images/icons/psd.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="new-product__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
+                        <div class="new-product__item product__item mix category-wordpress category-software"
+                            data-order="3">
+                            <div class="new-product__item-img product__item-img"
+                                style="background-image: url(images/content/sell-bg.jpg);">
+
+                                <div class="new-product__item-img--hover"
+                                    style="background-image: linear-gradient( to left, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%) ;">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="new-product__item-content product__item-content">
+                                <a href="#" class="content__title">
+                                    Bryson - Portfolio Template
+                                </a>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/content/sell-bg.jpg);"></div>
+                                    <a href="#" class="auror-name">Artcorner</a>
+                                    <a href="#" class="autor-category">HTML
+                                        <img src="images/icons/html.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="new-product__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
+                        <div class="new-product__item product__item mix category-site" data-order="4">
+                            <div class="new-product__item-img product__item-img"
+                                style="background-image: url(images/content/sell-bg.jpg);">
+                                <div class="new-product__item-img--hover"
+                                    style="background-image: linear-gradient( to left, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%) ;">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="new-product__item-content product__item-content">
+                                <a href="#" class="content__title">
+                                    E-commerce Shopping Cart
+                                </a>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/content/sell-bg.jpg);"></div>
+                                    <a href="#" class="auror-name">Theme-Valley</a>
+                                    <a href="#" class="autor-category">Plugin
+                                        <img src="images/icons/html.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="new-product__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
+                        <div class="new-product__item product__item mix category-joomla category-interface"
+                            data-order="5">
+                            <div class="new-product__item-img product__item-img"
+                                style="background-image: url(images/content/sell-bg.jpg);">
+                                <div class="new-product__item-img--hover"
+                                    style="background-image: linear-gradient( to left, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%) ;">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="new-product__item-content product__item-content">
+                                <a href="#" class="content__title">
+                                    E-commerce Shopping Cart
+                                </a>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/content/sell-bg.jpg);"></div>
+                                    <a href="#" class="auror-name">Theme-Valley</a>
+                                    <a href="#" class="autor-category">Plugin
+                                        <img src="images/icons/html.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="new-product__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
+
+                        <div class="new-product__item product__item mix category-psd" data-order="6">
+                            <div class="new-product__item-img product__item-img"
+                                style="background-image: url(images/content/sell-bg.jpg);">
+                                <div class="new-product__item-img--hover"
+                                    style="background-image: linear-gradient( to left, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%) ;">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="new-product__item-content product__item-content">
+                                <a href="#" class="content__title">
+                                    E-commerce Shopping Cart
+                                </a>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/content/sell-bg.jpg);"></div>
+                                    <a href="#" class="auror-name">Theme-Valley</a>
+                                    <a href="#" class="autor-category">Plugin
+                                        <img src="images/icons/html.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="new-product__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-product__all-btn">
+                        <a href="#">All New Products</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="followers section-box">
+                <div class="container">
+                    <div class="followers__title section__title">
+                        <div class="followers__title-text section__title-text  ">Your Followers Feed </div>
+                        <div class="followers__title-btn section__title-btn"></div>
+                    </div>
+                    <div class="followers__slider-items">
+                        <div class="follower__item product__item">
+                            <div class="follower__item-img product__item-img"
+                                style="background-image: url(images/content/sell-bg.jpg);"></div>
+                            <div class="follower__item-content product__item-content">
+                                <a href="#" class="content__title">
+                                    E-commerce Shopping Cart
+                                </a>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/content/sell-bg.jpg);"></div>
+                                    <a href="#" class="auror-name">Theme-Valley</a>
+                                    <a href="#" class="autor-category">Plugin
+                                        <img src="images/icons/wordpress.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="follower__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
+                        <div class="follower__item product__item">
+                            <div class="follower__item-img product__item-img"
+                                style="background-image: url(images/content/sell-bg.jpg);"></div>
+                            <div class="follower__item-content product__item-content">
+                                <a href="#" class="content__title">
+                                    E-commerce Shopping Cart
+                                </a>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/content/sell-bg.jpg);"></div>
+                                    <a href="#" class="auror-name">Theme-Valley</a>
+                                    <a href="#" class="autor-category">Plugin
+                                        <img src="images/icons/wordpress.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="follower__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
+                        <div class="follower__item product__item">
+                            <div class="follower__item-img product__item-img"
+                                style="background-image: url(images/content/sell-bg.jpg);"></div>
+                            <div class="follower__item-content product__item-content">
+                                <a href="#" class="content__title">
+                                    E-commerce Shopping Cart
+                                </a>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/content/sell-bg.jpg);"></div>
+                                    <a href="#" class="auror-name">Theme-Valley</a>
+                                    <a href="#" class="autor-category">Plugin
+                                        <img src="images/icons/wordpress.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="follower__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
+                        <div class="follower__item product__item">
+                            <div class="follower__item-img product__item-img"
+                                style="background-image: url(images/content/sell-bg.jpg);"></div>
+                            <div class="follower__item-content product__item-content">
+                                <a href="#" class="content__title">
+                                    E-commerce Shopping Cart
+                                </a>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/content/sell-bg.jpg);"></div>
+                                    <a href="#" class="auror-name">Theme-Valley</a>
+                                    <a href="#" class="autor-category">Plugin
+                                        <img src="images/icons/wordpress.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="follower__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
+                        <div class="follower__item product__item">
+                            <div class="follower__item-img product__item-img"
+                                style="background-image: url(images/content/sell-bg.jpg);"></div>
+                            <div class="follower__item-content product__item-content">
+                                <a href="#" class="content__title">
+                                    E-commerce Shopping Cart
+                                </a>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/content/sell-bg.jpg);"></div>
+                                    <a href="#" class="auror-name">Theme-Valley</a>
+                                    <a href="#" class="autor-category">Plugin
+                                        <img src="images/icons/wordpress.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="follower__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
+                        <div class="follower__item product__item">
+                            <div class="follower__item-img product__item-img"
+                                style="background-image: url(images/content/sell-bg.jpg);"></div>
+                            <div class="follower__item-content product__item-content">
+                                <a href="#" class="content__title">
+                                    E-commerce Shopping Cart
+                                </a>
+                                <div class="content__autor">
+                                    <div class="autor-avatar" style="background-image: url(images/content/sell-bg.jpg);"></div>
+                                    <a href="#" class="auror-name">Theme-Valley</a>
+                                    <a href="#" class="autor-category">Plugin
+                                        <img src="images/icons/wordpress.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="content__text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet congue.
+                                </div>
+                            </div>
+                            <div class="follower__item-stats product__item-stats">
+                                <div class="stats__inner">
+                                    <div class="stats-price">$20</div>
+                                    <div class="stats-like">90</div>
+                                    <div class="star-rate"></div>
+                                </div>
+                                <div class="stats-cell">246</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="statistic">
+                <div class="container">
+                    <div class="statistic__inner">
+                        <div class="statistic__item statistic__items">
+                            <div class="statistic__img">
+                                <img src="images/icons/briefcase.svg" alt="">
+                            </div>
+                            <div class="statistic__quantity">
+                                38,436
+                            </div>
+                            <div class="statistic__text">
+                                items for sale
+                            </div>
+                        </div>
+                        <div class="statistic__item statistic__sales">
+                            <div class="statistic__img">
+                                <img src="images/icons/download.svg" alt="">
+                            </div>
+                            <div class="statistic__quantity">
+                                3,736
+                            </div>
+                            <div class="statistic__text">
+                                total sales
+                            </div>
+                        </div>
+                        <div class="statistic__item statistic__customers">
+                            <div class="statistic__img">
+                                <img src="images/icons/smile.svg" alt="">
+                            </div>
+                            <div class="statistic__quantity">
+                                2,736
+                            </div>
+                            <div class="statistic__text">
+                                happy customers
+                            </div>
+                        </div>
+                        <div class="statistic__item statistic__members">
+                            <div class="statistic__img">
+                                <img src="images/icons/users.svg" alt="">
+                            </div>
+                            <div class="statistic__quantity">
+                                25,736
+                            </div>
+                            <div class="statistic__text">
+                                members
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reason">
+                <div class="container">
+                    <div class="reason__inner">
+                        <div class="reason__title second__title">
+                            <h3 class="reason__title-name second__title-name">
+                                Why Choose <span>MartPlace</span>
+                            </h3>
+                            <p class="reason__title-text second__title-text">
+                                Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis
+                                fugats. Lid est laborum dolo rumes fugats untras.
+                            </p>
+                        </div>
+                        <div class="reason__items-box">
+                            <div class="reason__item">
+                                <div class="reason__item-number">01</div>
+                                <div class="reason__item-img">
+                                    <img src="images/icons/license.svg" alt="">
+                                </div>
+                                <div class="reason__item-title">
+                                    One Time Payment
+                                </div>
+                                <div class="reason__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet diam
+                                    congue is laoreet elit metus.
+                                </div>
+                            </div>
+                            <div class="reason__item">
+                                <div class="reason__item-number">02</div>
+                                <div class="reason__item-img">
+                                    <img src="images/icons/magic-wand.svg" alt="">
+                                </div>
+                                <div class="reason__item-title">
+                                    One Time Payment
+                                </div>
+                                <div class="reason__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                    scelerisque
+                                    the mattis, leo quam aliquet diam
+                                    congue is laoreet elit metus.
+                                </div>
+                            </div>
+                            <div class="reason__item">
+                                <div class="reason__item-number">03</div>
+                                <div class="reason__item-img">
+                                    <img src="images/icons/lock .svg" alt="">
+                                </div>
+                                <div class="reason__item-title">
+                                    One Time Payment
+                                </div>
+                                <div class="reason__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                    scelerisque
+                                    the mattis, leo quam aliquet diam
+                                    congue is laoreet elit metus.
+                                </div>
+                            </div>
+                            <div class="reason__item">
+                                <div class="reason__item-number">04</div>
+                                <div class="reason__item-img">
+                                    <img src="images/icons/chart-bars.svg" alt="">
+                                </div>
+                                <div class="reason__item-title">
+                                    One Time Payment
+                                </div>
+                                <div class="reason__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                    scelerisque
+                                    the mattis, leo quam aliquet diam
+                                    congue is laoreet elit metus.
+                                </div>
+                            </div>
+                            <div class="reason__item">
+                                <div class="reason__item-number">05</div>
+                                <div class="reason__item-img">
+                                    <img src="images/icons/leaf.svg" alt="">
+                                </div>
+                                <div class="reason__item-title">
+                                    One Time Payment
+                                </div>
+                                <div class="reason__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                    scelerisque
+                                    the mattis, leo quam aliquet diam
+                                    congue is laoreet elit metus.
+                                </div>
+                            </div>
+                            <div class="reason__item">
+                                <div class="reason__item-number">06</div>
+                                <div class="reason__item-img">
+                                    <img src="images/icons/phone.svg" alt="">
+                                </div>
+                                <div class="reason__item-title">
+                                    One Time Payment
+                                </div>
+                                <div class="reason__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                    scelerisque
+                                    the mattis, leo quam aliquet diam
+                                    congue is laoreet elit metus.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+
+            <section class="start">
+                <div class="container-fluid">
+                    <div class="start__inner">
+                        <div class="start__sell" style="background-image: url(images/content/sell-bg.jpg);">
+                            <img class="start__img" src="images/icons/sell-img.svg" alt="">
+                            <div class="start__title">
+                                Sell Your Products
+                            </div>
+                            <div class="start__text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet diamcongue is laoreet elit metus.
+                            </div>
+                            <a class="start__link" href="#">Become an Author</a>
+                        </div>
+                        <div class="start__shop" style="background-image: url(images/content/shop-bg.jpg);">
+                            <img class="start__img" src="images/icons/shop-img.svg" alt="">
+                            <div class="start__title">
+                                Start Shopping Today
+                            </div>
+                            <div class="start__text">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                the mattis, leo quam aliquet diamcongue is laoreet elit metus.
+                            </div>
+                            <a class="start__link" href="#">Start Shopping</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feedback">
+                <div class="container">
+                    <div class="feedback__inner">
+                        <div class="feedback__title second__title">
+                            <h3 class="feedback__title-name second__title-name">
+                                Our Clients <span>Feedback</span>
+                            </h3>
+                            <p class="feedback__title-text second__title-text">
+                                Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis
+                                fugats. Lid est laborum dolo rumes fugats untras.
+                            </p>
+                        </div>
+                        <div class="feedback__inner-items">
+                            <div class="feedback__item">
+                                <div class="feedback__item-autor">
+                                    <div class="autor__avatar" href="#">
+                                        <img src="images/content/sell-bg.jpg" alt="">
+                                    </div>
+                                    <div class="autor__data">
+                                        AazzTech
+                                        <div class="autor__data-category">WordPress</div>
+                                    </div>
+                                </div>
+                                <div class="feedback__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi
+                                    is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
+                                </div>
+                            </div>
+                            <div class="feedback__item">
+                                <div class="feedback__item-autor">
+                                    <div class="autor__avatar" href="#">
+                                        <img src="images/content/sell-bg.jpg" alt="">
+                                    </div>
+                                    <div class="autor__data">
+                                        AazzTech
+                                        <div class="autor__data-category">WordPress</div>
+                                    </div>
+                                </div>
+                                <div class="feedback__item-text">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi
+                                    is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <a class="feedback__link" href="#">View All Reviews</a>
+                    </div>
+                </div>
+            </section> 
+
+            <section class=" news section-box">
+                <div class="container">
+                    <div class="news__inner">
+                        <div class="news__title second__title">
+                            <h3 class="news__title-name second__title-name">
+                                Latest <span>News</span>
+                            </h3>
+                            <p class="news__title-text second__title-text">
+                                Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis
+                                fugats. Lid est laborum dolo rumes fugats untras.
+                            </p>
+                        </div>
+                        <div class="news__inner-items">
+                            <div class="news-item product__item">
+                                <div class="news__item-img product__item-img"
+                                    style="background-image: url(images/content/sell-bg.jpg);">
+                                </div>
+                                <div class="news__item-content product__item-content">
+                                    <a href="#" class="content__title">
+                                        E-commerce Shopping Cart
+                                    </a>
+
+                                    <div class="content__text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                        scelerisque
+                                        the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="news__item-stats product__item-stats">
+                                    <a href="#" class="stats-data">24 Feb 2017</a>
+                                    <div class="stats__inner">
+                                        <a href="#" class="stats-comment">45</a>
+                                        <div class="stats-view">345</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="news-item product__item">
+                                <div class="news__item-img product__item-img"
+                                    style="background-image: url(images/content/sell-bg.jpg);">
+                                </div>
+                                <div class="news__item-content product__item-content">
+                                    <a href="#" class="content__title">
+                                        E-commerce Shopping Cart
+                                    </a>
+
+                                    <div class="content__text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                        scelerisque
+                                        the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="news__item-stats product__item-stats">
+                                    <a href="#" class="stats-data">24 Feb 2017</a>
+                                    <div class="stats__inner">
+                                        <a href="#" class="stats-comment">45</a>
+                                        <div class="stats-view">345</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="news-item product__item">
+                                <div class="news__item-img product__item-img"
+                                    style="background-image: url(images/content/sell-bg.jpg);">
+                                </div>
+                                <div class="news__item-content product__item-content">
+                                    <a href="#" class="content__title">
+                                        E-commerce Shopping Cart
+                                    </a>
+
+                                    <div class="content__text">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                        scelerisque
+                                        the mattis, leo quam aliquet congue.
+                                    </div>
+                                </div>
+                                <div class="news__item-stats product__item-stats">
+                                    <a href="#" class="stats-data">24 Feb 2017</a>
+                                    <div class="stats__inner">
+                                        <a href="#" class="stats-comment">45</a>
+                                        <div class="stats-view">345</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                           
+
+
+                        </div>
+                    </div>
+                </div>
+            </section> 
+
+            <section class="advantages-bottom">
+                <div class="container">
+                    <div class="advantages-bottom__inner">
+                        <div class="advantages-bottom__item">
+                            <img class="advantages-bottom__img" src="images/guarantee.png" alt="">
+                            <div class="advantages-bottom__text">
+                                30 Days Money Back <a href="#" class="advantages-bottom__guarantee">Guarantee</a>
+                            </div>
+                        </div>
+                        <div class="advantages-bottom__item">
+                            <img class="advantages-bottom__img" src="images/support.png" alt="">
+                            <div class="advantages-bottom__text">
+                                Fast and Friendly <a href="#" class="advantages-bottom__support">Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="join"
+                style="background-image: linear-gradient( to left, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);">
+                <div class="container">
+                    <div class="join__inner">
+                        <div class="join__title">
+                            Ready to Join Our Marketplace!
+                        </div>
+                        <div class="join__text">
+                            Over 25,000 designers and developers trust the MartPlace.
+                        </div>
+                        <a href="#">Join Us Today</a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+            <div class="footer__inner-top">
+              <div class="container">
+                <div class="footer__inner-items">
+      
+                  <div class="footer__contacts">
+                    <div class="footer__contacts-title">
+                      <img src="images/footer-logo.png" alt="">
+                    </div>
+                    <div class="footer__contacts-text">
+                      Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque
+                      the mattis, leo quam.
+                    </div>
+                    <div class="footer__contacts-contacts">
+                      <ul>
+                        <li class="contacts-phone"><a href="tel:+67898752235">Phone: +6789-875-2235</a></li>
+                        <li class="contacts-email"><a href="#">support@aazztech.com</a></li>
+                        <li class="contacts-adress"><a href="#">202 New Hampshire Avenue
+                            Northwest #100, New York-2573</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer__about">
+                    <div class="footer__about-title footer-title">
+                      Our Company
+                    </div>
+                    <ul class="footer__about-link footer-link">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">How It Work</a></li>
+                      <li><a href="#">Affiliates</a></li>
+                      <li><a href="#">Testimonials</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Copyright Notice</a></li>
+                      <li><a href="#">Blog</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer__help">
+                    <div class="footer__about-title footer-title">
+                      Help Support
+                    </div>
+                    <ul class="footer__help-link footer-link">
+                      <li><a href="#">Support Forum</a></li>
+                      <li><a href="#">Terms & Conditionsk</a></li>
+                      <li><a href="#">Support Policy</a></li>
+                      <li><a href="#">Refund Policy</a></li>
+                      <li><a href="#">FAQs</a></li>
+                      <li><a href="#">Buyers Faq</a></li>
+                      <li><a href="#">Sellers Faq</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer__news">
+                    <div class="footer__news-title footer-title">
+                      Newsletter
+                    </div>
+                    <div class="footer__news-text">
+                      Subscribe to get the latest news, update and offer information. Don't worry, we won't
+                      send spam!
+                    </div>
+                    <form>
+                      <input type="text" placeholder="Enter email" required>
+                      <button type="submit">Submit</button>
+                    </form>
+                    <div class="footer__news-social">
+                      <ul>
+                        <li><a class="faceboock" href="#"></a></li>
+                        <li><a class="twitter" href="#"></a></li>
+                        <li><a class="google" href="#"></a></li>
+                        <li><a class="pinterest" href="#"></a></li>
+                        <li><a class="linkedin" href="#"></a></li>
+                        <li><a class="dribbble" href="#"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a href="#" class="header__join--footer">Become a Seller</a>
+                </div>
+      
+              </div>
+            </div>
+            <div class="footer__inner-bottom">
+              <div class="container">
+                <div class="footer__bottom-text">
+                  ©2017 <span>MartPlace</span>. All rights reserved. Created by <span>AazzTech</span>
+                </div>
+              </div>
+            </div>
+          </footer>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
