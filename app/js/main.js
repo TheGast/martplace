@@ -161,7 +161,8 @@ $(function() {
 
     $('.menu-burger').on('click', function(){
         $('.header__bottom-menu').toggleClass('active');   
-        $('.bottom-menu__list-link').removeClass('active');       
+        $('.bottom-menu__list-link').removeClass('active');  
+           
     });
 
     $('.header__notifications-alarm').on('click', function(){
@@ -171,7 +172,8 @@ $(function() {
         $(this).toggleClass('active');        
     });
     $('.header__notifications-cart').on('click', function(){
-        $(this).toggleClass('active');        
+        $(this).toggleClass('active');   
+        
     });
     $('.header__user').on('click', function(){
         $(this).toggleClass('active');        
@@ -179,7 +181,8 @@ $(function() {
 
 
     $('.bottom-menu__list-link').on('click', function(){
-        $(this).toggleClass('active');        
+        $(this).toggleClass('active');   
+          
     });
 
     $('.user-drop').on('click', function(){
