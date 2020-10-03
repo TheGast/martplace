@@ -56,6 +56,26 @@ $(function() {
              
         ]
     });
+
+    $('.feedback__inner-items').slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        prevArrow: '<button type="button" class="slick-prev slick-arrow lnr-chevron-left"></button>',
+        nextArrow: '<button type="button" class="slick-next slick-arrow lnr-chevron-right"></button>',
+        responsive:[             
+            {    
+                breakpoint: 960, 
+                settings:{
+                    
+                    slidesToShow: 1,
+                    slidesToScroll: 1,   
+                     prevArrow: false,
+                    nextArrow: false, 
+                }       
+                },              
+             
+        ]
+    });
  
 //-----------------------------------------------------------------------------------
     var $range = $(".js-range-slider");
@@ -160,30 +180,9 @@ $(function() {
 // меню по клику-----------------------------------------------
 
     $('.menu-burger').on('click', function(){
-        $('.header__bottom-menu').toggleClass('active');   
-        $('.bottom-menu__list-link').removeClass('active');  
-           
-    });
-
-    $('.header__notifications-alarm').on('click', function(){
-        $(this).toggleClass('active');        
-    });
-    $('.header__notifications-envelope').on('click', function(){
-        $(this).toggleClass('active');        
-    });
-    $('.header__notifications-cart').on('click', function(){
-        $(this).toggleClass('active');   
-        
-    });
-    $('.header__user').on('click', function(){
-        $(this).toggleClass('active');        
-    });
-
-
-    $('.bottom-menu__list-link').on('click', function(){
-        $(this).toggleClass('active');   
-          
-    });
+        $('.header-menu').toggleClass('active');  
+                  
+    }); 
 
     $('.user-drop').on('click', function(){
         $('.header__notifications, .header__user-info').toggleClass('active'); 
@@ -202,6 +201,31 @@ $(function() {
         $('.aside__range form').slideToggle('active');        
         $('.aside__range button').toggleClass('on');        
     });
+
+    $('.user__notifications-alarm').on('click', function(){
+        $('.user__notifications-drop--alarm').slideToggle('active'); 
+      });
+
+    $('.user__notifications-envelope').on('click', function(){
+        $('.user__notifications-drop--envelope').slideToggle('active'); 
+      });
+    $('.user__notifications-cart').on('click', function(){
+        $('.user__notifications-drop--cart').slideToggle('active'); 
+      });
+    $('.user__name').on('click', function(){
+        $('.user__menu').slideToggle('active'); 
+      });
+    $('.user__notifications-submenu').on('click', function(){
+        $('.header__link').toggleClass('active'); 
+      });
+    $('.notification-trigger').on('click', function(){
+        $('.user__notifications').toggleClass('active'); 
+        $('.user__notifications-drop--cart').hide('.user__notifications-drop--cart');
+        $('.user__notifications-drop--alarm').hide('.user__notifications-drop--alarm');
+        $('.user__notifications-drop--envelope').hide('.user__notifications-drop--envelope');
+        $('.header__link').removeClass('active');
+        
+      });
 
     
 
